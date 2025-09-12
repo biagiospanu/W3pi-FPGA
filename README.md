@@ -1,9 +1,6 @@
 W3pi-FPGA: FPGA-Accelerated W -> 3π Decay Classifier
-<<<<<<< HEAD
+
 This repository contains the code and resources for an educational project focused on building and deploying a machine learning model to classify W -> 3π decays from simulated CMS data.
-=======
-This repository contains the code and resources for an educational project focused on building and deploying a machine learning model to classify W -> 3π decays from simulated CMS data. This project serves as a simplified version of what real researchers do, providing a hands-on experience in the complete workflow from data analysis to hardware deployment.
->>>>>>> fbfb54b (first commit)
 
 Overview
 In high-energy physics, researchers develop sophisticated methods to find specific, rare events within the vast amounts of data produced by experiments like those at the Large Hadron Collider (LHC). This project demonstrates a key technique used in this process by training a Boosted Decision Tree (BDT) with XGBoost to identify simulated W -> 3π decays. The trained model is then deployed onto an FPGA using the Conifer framework to showcase how hardware acceleration can be used to perform fast, low-latency inference.
