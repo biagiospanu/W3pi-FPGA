@@ -1,0 +1,359 @@
+{
+  "0": {
+    "basicblocks": 14,
+    "calls": "15 10 23",
+    "file": "my_prj.cpp",
+    "fileloc": 25,
+    "instructions": 179,
+    "loads": {
+      "L": 1
+    },
+    "name": "my_prj_accelerator",
+    "stores": {
+      "T": 2
+    },
+    "total_instructions": 2702
+  },
+  "1": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "BDT.h",
+    "fileloc": 56,
+    "instructions": 94,
+    "loads": {
+      "L": 8
+    },
+    "name": "decision_function<ap_fixed<18, 8, AP_TRN, AP_WRAP, 0>, ap_fixed<18, 8, AP_TRN, AP_WRAP, 0> >",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 94
+  },
+  "10": {
+    "basicblocks": 1,
+    "calls": "19 8 6 9 16 12 3 11 1 18 4 7 14 21 13 5 20 22 17",
+    "file": "BDT.cpp",
+    "fileloc": 7,
+    "instructions": 77,
+    "loads": {
+      "L": 19
+    },
+    "name": "tree_scores",
+    "stores": {
+      "L": 19
+    },
+    "total_instructions": 1748
+  },
+  "11": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "BDT.h",
+    "fileloc": 56,
+    "instructions": 90,
+    "loads": {
+      "L": 6
+    },
+    "name": "decision_function<ap_fixed<18, 8, AP_TRN, AP_WRAP, 0>, ap_fixed<18, 8, AP_TRN, AP_WRAP, 0> >",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 90
+  },
+  "12": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "BDT.h",
+    "fileloc": 56,
+    "instructions": 95,
+    "loads": {
+      "L": 7
+    },
+    "name": "decision_function<ap_fixed<18, 8, AP_TRN, AP_WRAP, 0>, ap_fixed<18, 8, AP_TRN, AP_WRAP, 0> >",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 95
+  },
+  "13": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "BDT.h",
+    "fileloc": 56,
+    "instructions": 90,
+    "loads": {
+      "L": 6
+    },
+    "name": "decision_function<ap_fixed<18, 8, AP_TRN, AP_WRAP, 0>, ap_fixed<18, 8, AP_TRN, AP_WRAP, 0> >",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 90
+  },
+  "14": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "BDT.h",
+    "fileloc": 56,
+    "instructions": 87,
+    "loads": {
+      "L": 7
+    },
+    "name": "decision_function<ap_fixed<18, 8, AP_TRN, AP_WRAP, 0>, ap_fixed<18, 8, AP_TRN, AP_WRAP, 0> >",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 87
+  },
+  "15": {
+    "basicblocks": 61,
+    "calls": "",
+    "file": "my_prj.cpp",
+    "fileloc": 13,
+    "instructions": 516,
+    "name": "copy_input",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 516
+  },
+  "16": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "BDT.h",
+    "fileloc": 56,
+    "instructions": 94,
+    "loads": {
+      "L": 8
+    },
+    "name": "decision_function<ap_fixed<18, 8, AP_TRN, AP_WRAP, 0>, ap_fixed<18, 8, AP_TRN, AP_WRAP, 0> >",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 94
+  },
+  "17": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "BDT.h",
+    "fileloc": 56,
+    "instructions": 60,
+    "loads": {
+      "L": 6
+    },
+    "name": "decision_function<ap_fixed<18, 8, AP_TRN, AP_WRAP, 0>, ap_fixed<18, 8, AP_TRN, AP_WRAP, 0> >",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 60
+  },
+  "18": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "BDT.h",
+    "fileloc": 56,
+    "instructions": 82,
+    "loads": {
+      "L": 7
+    },
+    "name": "decision_function<ap_fixed<18, 8, AP_TRN, AP_WRAP, 0>, ap_fixed<18, 8, AP_TRN, AP_WRAP, 0> >",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 82
+  },
+  "19": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "BDT.h",
+    "fileloc": 56,
+    "instructions": 95,
+    "loads": {
+      "L": 7
+    },
+    "name": "decision_function<ap_fixed<18, 8, AP_TRN, AP_WRAP, 0>, ap_fixed<18, 8, AP_TRN, AP_WRAP, 0> >",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 95
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "BDT.h",
+    "fileloc": 22,
+    "instructions": 47,
+    "loads": {
+      "L": 19
+    },
+    "name": "reduce<ap_fixed<18, 8, AP_TRN, AP_WRAP, 0>, 4, BDT::OpAdd<ap_fixed<18, 8, AP_TRN, AP_WRAP, 0> > >",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 47
+  },
+  "20": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "BDT.h",
+    "fileloc": 56,
+    "instructions": 94,
+    "loads": {
+      "L": 8
+    },
+    "name": "decision_function<ap_fixed<18, 8, AP_TRN, AP_WRAP, 0>, ap_fixed<18, 8, AP_TRN, AP_WRAP, 0> >",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 94
+  },
+  "21": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "BDT.h",
+    "fileloc": 56,
+    "instructions": 97,
+    "loads": {
+      "L": 8
+    },
+    "name": "decision_function<ap_fixed<18, 8, AP_TRN, AP_WRAP, 0>, ap_fixed<18, 8, AP_TRN, AP_WRAP, 0> >",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 97
+  },
+  "22": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "BDT.h",
+    "fileloc": 56,
+    "instructions": 77,
+    "loads": {
+      "L": 7
+    },
+    "name": "decision_function<ap_fixed<18, 8, AP_TRN, AP_WRAP, 0>, ap_fixed<18, 8, AP_TRN, AP_WRAP, 0> >",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 77
+  },
+  "23": {
+    "basicblocks": 1,
+    "calls": "2 2 2 2",
+    "file": "BDT.h",
+    "fileloc": 22,
+    "instructions": 71,
+    "loads": {
+      "L": 7
+    },
+    "name": "reduce<ap_fixed<18, 8, AP_TRN, AP_WRAP, 0>, 19, BDT::OpAdd<ap_fixed<18, 8, AP_TRN, AP_WRAP, 0> > >",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 259
+  },
+  "3": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "BDT.h",
+    "fileloc": 56,
+    "instructions": 95,
+    "loads": {
+      "L": 7
+    },
+    "name": "decision_function<ap_fixed<18, 8, AP_TRN, AP_WRAP, 0>, ap_fixed<18, 8, AP_TRN, AP_WRAP, 0> >",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 95
+  },
+  "4": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "BDT.h",
+    "fileloc": 56,
+    "instructions": 77,
+    "loads": {
+      "L": 7
+    },
+    "name": "decision_function<ap_fixed<18, 8, AP_TRN, AP_WRAP, 0>, ap_fixed<18, 8, AP_TRN, AP_WRAP, 0> >",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 77
+  },
+  "5": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "BDT.h",
+    "fileloc": 56,
+    "instructions": 60,
+    "loads": {
+      "L": 6
+    },
+    "name": "decision_function<ap_fixed<18, 8, AP_TRN, AP_WRAP, 0>, ap_fixed<18, 8, AP_TRN, AP_WRAP, 0> >",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 60
+  },
+  "6": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "BDT.h",
+    "fileloc": 56,
+    "instructions": 95,
+    "loads": {
+      "L": 7
+    },
+    "name": "decision_function<ap_fixed<18, 8, AP_TRN, AP_WRAP, 0>, ap_fixed<18, 8, AP_TRN, AP_WRAP, 0> >",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 95
+  },
+  "7": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "BDT.h",
+    "fileloc": 56,
+    "instructions": 99,
+    "loads": {
+      "L": 9
+    },
+    "name": "decision_function<ap_fixed<18, 8, AP_TRN, AP_WRAP, 0>, ap_fixed<18, 8, AP_TRN, AP_WRAP, 0> >",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 99
+  },
+  "8": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "BDT.h",
+    "fileloc": 56,
+    "instructions": 97,
+    "loads": {
+      "L": 8
+    },
+    "name": "decision_function<ap_fixed<18, 8, AP_TRN, AP_WRAP, 0>, ap_fixed<18, 8, AP_TRN, AP_WRAP, 0> >",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 97
+  },
+  "9": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "BDT.h",
+    "fileloc": 56,
+    "instructions": 93,
+    "loads": {
+      "L": 6
+    },
+    "name": "decision_function<ap_fixed<18, 8, AP_TRN, AP_WRAP, 0>, ap_fixed<18, 8, AP_TRN, AP_WRAP, 0> >",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 93
+  }
+}

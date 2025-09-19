@@ -1,0 +1,909 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5583" msg_severity="WARNING" msg_loc="firmware/my_prj.cpp:9:9" msg_body="'#pragma HLS unroll' can only be applied inside loop body">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:57:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:58:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=feature" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:59:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=threshold" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:60:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=value" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:61:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=children_left" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:62:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=children_right" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:63:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=parent" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:78:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=comparison" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:79:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=activation" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:80:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=activation_leaf" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:81:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=value_leaf" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:85:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:98:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:140:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=scores dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/my_prj.cpp:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="my_prj" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=x" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/my_prj.cpp:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="my_prj" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=score" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/my_prj.cpp:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="my_prj" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/my_prj.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="my_prj" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/bspanu/hackathon/conifer/conifer/build_hls.tcl:54:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="my_prj_accelerator" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=my_prj_accelerator" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/my_prj.cpp:26:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="my_prj_accelerator" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=m_axi port=x offset=slave bundle=gmem0" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/my_prj.cpp:27:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="my_prj_accelerator" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=m_axi port=score offset=slave bundle=gmem0" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/my_prj.cpp:28:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="my_prj_accelerator" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=x bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/my_prj.cpp:29:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="my_prj_accelerator" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=score bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/my_prj.cpp:30:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="my_prj_accelerator" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=N bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/my_prj.cpp:31:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="my_prj_accelerator" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=n_f bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/my_prj.cpp:32:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="my_prj_accelerator" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=n_c bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/my_prj.cpp:33:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="my_prj_accelerator" ARG_PragmaIsValid="1" ARG_PragmaOptions="mode=s_axilite port=return bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/my_prj.cpp:37:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="my_prj_accelerator" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:57:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:58:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=feature" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:59:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=threshold" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:60:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=value" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:61:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=children_left" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:62:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=children_right" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:63:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=parent" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:78:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=comparison" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:79:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=activation" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:80:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=activation_leaf" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:81:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=value_leaf" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:85:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:98:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/BDT.h:140:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="decision_function" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=scores dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-386" msg_severity="WARNING" msg_loc="firmware/my_prj.cpp:25:0" msg_body="A depth specification is required for MAXI interface port 'x' for cosimulation.">
+        <args Name="x"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INTERFACE" msg_id="214-386" msg_severity="WARNING" msg_loc="firmware/my_prj.cpp:25:0" msg_body="A depth specification is required for MAXI interface port 'score' for cosimulation.">
+        <args Name="score"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="firmware/BDT.cpp:26:29" msg_body="Adding 'tree_0_18 (.41)' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="tree_0_18 (.41)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="firmware/BDT.cpp:25:29" msg_body="Adding 'tree_0_17 (.42)' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="tree_0_17 (.42)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="firmware/BDT.cpp:24:29" msg_body="Adding 'tree_0_16 (.43)' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="tree_0_16 (.43)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="firmware/BDT.cpp:23:29" msg_body="Adding 'tree_0_15 (.44)' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="tree_0_15 (.44)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="firmware/BDT.cpp:22:29" msg_body="Adding 'tree_0_14 (.45)' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="tree_0_14 (.45)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="firmware/BDT.cpp:21:29" msg_body="Adding 'tree_0_13 (.46)' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="tree_0_13 (.46)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="firmware/BDT.cpp:20:29" msg_body="Adding 'tree_0_12 (.47)' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="tree_0_12 (.47)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="firmware/BDT.cpp:19:29" msg_body="Adding 'tree_0_11 (.48)' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="tree_0_11 (.48)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="firmware/BDT.cpp:18:29" msg_body="Adding 'tree_0_10 (.49)' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="tree_0_10 (.49)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="firmware/BDT.cpp:17:27" msg_body="Adding 'tree_0_9 (.50)' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="tree_0_9 (.50)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="firmware/BDT.cpp:16:27" msg_body="Adding 'tree_0_8 (.51)' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="tree_0_8 (.51)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="firmware/BDT.cpp:15:27" msg_body="Adding 'tree_0_7 (.52)' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="tree_0_7 (.52)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="firmware/BDT.cpp:14:27" msg_body="Adding 'tree_0_6 (.53)' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="tree_0_6 (.53)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="firmware/BDT.cpp:13:27" msg_body="Adding 'tree_0_5 (.54)' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="tree_0_5 (.54)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="firmware/BDT.cpp:12:27" msg_body="Adding 'tree_0_4 (.55)' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="tree_0_4 (.55)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="firmware/BDT.cpp:11:27" msg_body="Adding 'tree_0_3 (.56)' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="tree_0_3 (.56)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="firmware/BDT.cpp:10:27" msg_body="Adding 'tree_0_2 (.57)' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="tree_0_2 (.57)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="firmware/BDT.cpp:9:27" msg_body="Adding 'tree_0_1 (.58)' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="tree_0_1 (.58)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="firmware/BDT.cpp:8:27" msg_body="Adding 'tree_0_0 (.59)' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="tree_0_0 (.59)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:26:0" msg_body="Disaggregating variable 'tree_0_0 (.59)'">
+        <args Name="tree_0_0 (.59)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:34:0" msg_body="Disaggregating variable 'tree_0_1 (.58)'">
+        <args Name="tree_0_1 (.58)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:42:0" msg_body="Disaggregating variable 'tree_0_2 (.57)'">
+        <args Name="tree_0_2 (.57)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:50:0" msg_body="Disaggregating variable 'tree_0_3 (.56)'">
+        <args Name="tree_0_3 (.56)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:58:0" msg_body="Disaggregating variable 'tree_0_4 (.55)'">
+        <args Name="tree_0_4 (.55)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:66:0" msg_body="Disaggregating variable 'tree_0_5 (.54)'">
+        <args Name="tree_0_5 (.54)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:74:0" msg_body="Disaggregating variable 'tree_0_6 (.53)'">
+        <args Name="tree_0_6 (.53)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:82:0" msg_body="Disaggregating variable 'tree_0_7 (.52)'">
+        <args Name="tree_0_7 (.52)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:90:0" msg_body="Disaggregating variable 'tree_0_8 (.51)'">
+        <args Name="tree_0_8 (.51)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:98:0" msg_body="Disaggregating variable 'tree_0_9 (.50)'">
+        <args Name="tree_0_9 (.50)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:106:0" msg_body="Disaggregating variable 'tree_0_10 (.49)'">
+        <args Name="tree_0_10 (.49)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:114:0" msg_body="Disaggregating variable 'tree_0_11 (.48)'">
+        <args Name="tree_0_11 (.48)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:122:0" msg_body="Disaggregating variable 'tree_0_12 (.47)'">
+        <args Name="tree_0_12 (.47)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:130:0" msg_body="Disaggregating variable 'tree_0_13 (.46)'">
+        <args Name="tree_0_13 (.46)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:138:0" msg_body="Disaggregating variable 'tree_0_14 (.45)'">
+        <args Name="tree_0_14 (.45)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:146:0" msg_body="Disaggregating variable 'tree_0_15 (.44)'">
+        <args Name="tree_0_15 (.44)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:154:0" msg_body="Disaggregating variable 'tree_0_16 (.43)'">
+        <args Name="tree_0_16 (.43)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:162:0" msg_body="Disaggregating variable 'tree_0_17 (.42)'">
+        <args Name="tree_0_17 (.42)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="firmware/parameters.h:170:0" msg_body="Disaggregating variable 'tree_0_18 (.41)'">
+        <args Name="tree_0_18 (.41)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/my_prj.cpp:20:20" msg_body="Loop 'VITIS_LOOP_20_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_20_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/BDT.h:152:23" msg_body="Loop 'VITIS_LOOP_152_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_152_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/BDT.h:145:5" msg_body="Loop 'Reduce' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="Reduce"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/BDT.h:119:23" msg_body="Loop 'VITIS_LOOP_119_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_119_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/BDT.h:97:15" msg_body="Loop 'Activate' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/BDT.h:84:11" msg_body="Loop 'Compare' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="firmware/my_prj.cpp:14:20" msg_body="Loop 'VITIS_LOOP_14_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_14_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/my_prj.cpp:19:0" msg_body="Unrolling loop 'VITIS_LOOP_20_1' (firmware/my_prj.cpp:20:20) in function 'copy_output' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/my_prj.cpp:20:20" LoopName="VITIS_LOOP_20_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:138:0" msg_body="Unrolling loop 'VITIS_LOOP_152_1' (firmware/BDT.h:152:23) in function 'BDT::BDT&lt;19, 2, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:152:23" LoopName="VITIS_LOOP_152_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:138:0" msg_body="Unrolling loop 'Reduce' (firmware/BDT.h:145:5) in function 'BDT::BDT&lt;19, 2, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function' completely with a factor of 1">
+        <args Factor="1" LoopLoc="firmware/BDT.h:145:5" LoopName="Reduce"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree&lt;18, 17, 9, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 9">
+        <args Factor="9" LoopLoc="firmware/BDT.h:119:23" LoopName="VITIS_LOOP_119_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree&lt;18, 17, 9, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 17">
+        <args Factor="17" LoopLoc="firmware/BDT.h:97:15" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree&lt;18, 17, 9, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 17">
+        <args Factor="17" LoopLoc="firmware/BDT.h:84:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree&lt;17, 23, 12, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 12">
+        <args Factor="12" LoopLoc="firmware/BDT.h:119:23" LoopName="VITIS_LOOP_119_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree&lt;17, 23, 12, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 23">
+        <args Factor="23" LoopLoc="firmware/BDT.h:97:15" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree&lt;17, 23, 12, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 23">
+        <args Factor="23" LoopLoc="firmware/BDT.h:84:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree&lt;16, 29, 15, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 15">
+        <args Factor="15" LoopLoc="firmware/BDT.h:119:23" LoopName="VITIS_LOOP_119_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree&lt;16, 29, 15, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 29">
+        <args Factor="29" LoopLoc="firmware/BDT.h:97:15" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree&lt;16, 29, 15, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 29">
+        <args Factor="29" LoopLoc="firmware/BDT.h:84:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree&lt;15, 17, 9, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 9">
+        <args Factor="9" LoopLoc="firmware/BDT.h:119:23" LoopName="VITIS_LOOP_119_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree&lt;15, 17, 9, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 17">
+        <args Factor="17" LoopLoc="firmware/BDT.h:97:15" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree&lt;15, 17, 9, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 17">
+        <args Factor="17" LoopLoc="firmware/BDT.h:84:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree&lt;14, 29, 15, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 15">
+        <args Factor="15" LoopLoc="firmware/BDT.h:119:23" LoopName="VITIS_LOOP_119_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree&lt;14, 29, 15, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 29">
+        <args Factor="29" LoopLoc="firmware/BDT.h:97:15" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree&lt;14, 29, 15, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 29">
+        <args Factor="29" LoopLoc="firmware/BDT.h:84:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree&lt;13, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 16">
+        <args Factor="16" LoopLoc="firmware/BDT.h:119:23" LoopName="VITIS_LOOP_119_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree&lt;13, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 31">
+        <args Factor="31" LoopLoc="firmware/BDT.h:97:15" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree&lt;13, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 31">
+        <args Factor="31" LoopLoc="firmware/BDT.h:84:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree&lt;12, 27, 14, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 14">
+        <args Factor="14" LoopLoc="firmware/BDT.h:119:23" LoopName="VITIS_LOOP_119_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree&lt;12, 27, 14, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 27">
+        <args Factor="27" LoopLoc="firmware/BDT.h:97:15" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree&lt;12, 27, 14, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 27">
+        <args Factor="27" LoopLoc="firmware/BDT.h:84:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree&lt;11, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 16">
+        <args Factor="16" LoopLoc="firmware/BDT.h:119:23" LoopName="VITIS_LOOP_119_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree&lt;11, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 31">
+        <args Factor="31" LoopLoc="firmware/BDT.h:97:15" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree&lt;11, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 31">
+        <args Factor="31" LoopLoc="firmware/BDT.h:84:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree&lt;10, 23, 12, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 12">
+        <args Factor="12" LoopLoc="firmware/BDT.h:119:23" LoopName="VITIS_LOOP_119_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree&lt;10, 23, 12, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 23">
+        <args Factor="23" LoopLoc="firmware/BDT.h:97:15" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree&lt;10, 23, 12, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 23">
+        <args Factor="23" LoopLoc="firmware/BDT.h:84:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree&lt;9, 25, 13, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 13">
+        <args Factor="13" LoopLoc="firmware/BDT.h:119:23" LoopName="VITIS_LOOP_119_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree&lt;9, 25, 13, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 25">
+        <args Factor="25" LoopLoc="firmware/BDT.h:97:15" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree&lt;9, 25, 13, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 25">
+        <args Factor="25" LoopLoc="firmware/BDT.h:84:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree&lt;8, 29, 15, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 15">
+        <args Factor="15" LoopLoc="firmware/BDT.h:119:23" LoopName="VITIS_LOOP_119_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree&lt;8, 29, 15, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 29">
+        <args Factor="29" LoopLoc="firmware/BDT.h:97:15" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree&lt;8, 29, 15, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 29">
+        <args Factor="29" LoopLoc="firmware/BDT.h:84:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree&lt;7, 29, 15, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 15">
+        <args Factor="15" LoopLoc="firmware/BDT.h:119:23" LoopName="VITIS_LOOP_119_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree&lt;7, 29, 15, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 29">
+        <args Factor="29" LoopLoc="firmware/BDT.h:97:15" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree&lt;7, 29, 15, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 29">
+        <args Factor="29" LoopLoc="firmware/BDT.h:84:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree&lt;6, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 16">
+        <args Factor="16" LoopLoc="firmware/BDT.h:119:23" LoopName="VITIS_LOOP_119_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree&lt;6, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 31">
+        <args Factor="31" LoopLoc="firmware/BDT.h:97:15" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree&lt;6, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 31">
+        <args Factor="31" LoopLoc="firmware/BDT.h:84:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree&lt;5, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 16">
+        <args Factor="16" LoopLoc="firmware/BDT.h:119:23" LoopName="VITIS_LOOP_119_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree&lt;5, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 31">
+        <args Factor="31" LoopLoc="firmware/BDT.h:97:15" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree&lt;5, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 31">
+        <args Factor="31" LoopLoc="firmware/BDT.h:84:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree&lt;4, 29, 15, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 15">
+        <args Factor="15" LoopLoc="firmware/BDT.h:119:23" LoopName="VITIS_LOOP_119_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree&lt;4, 29, 15, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 29">
+        <args Factor="29" LoopLoc="firmware/BDT.h:97:15" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree&lt;4, 29, 15, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 29">
+        <args Factor="29" LoopLoc="firmware/BDT.h:84:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree&lt;3, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 16">
+        <args Factor="16" LoopLoc="firmware/BDT.h:119:23" LoopName="VITIS_LOOP_119_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree&lt;3, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 31">
+        <args Factor="31" LoopLoc="firmware/BDT.h:97:15" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree&lt;3, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 31">
+        <args Factor="31" LoopLoc="firmware/BDT.h:84:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree&lt;2, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 16">
+        <args Factor="16" LoopLoc="firmware/BDT.h:119:23" LoopName="VITIS_LOOP_119_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree&lt;2, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 31">
+        <args Factor="31" LoopLoc="firmware/BDT.h:97:15" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree&lt;2, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 31">
+        <args Factor="31" LoopLoc="firmware/BDT.h:84:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree&lt;1, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 16">
+        <args Factor="16" LoopLoc="firmware/BDT.h:119:23" LoopName="VITIS_LOOP_119_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree&lt;1, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 31">
+        <args Factor="31" LoopLoc="firmware/BDT.h:97:15" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree&lt;1, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 31">
+        <args Factor="31" LoopLoc="firmware/BDT.h:84:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree&lt;0, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 16">
+        <args Factor="16" LoopLoc="firmware/BDT.h:119:23" LoopName="VITIS_LOOP_119_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree&lt;0, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 31">
+        <args Factor="31" LoopLoc="firmware/BDT.h:97:15" LoopName="Activate"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree&lt;0, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;' completely with a factor of 31">
+        <args Factor="31" LoopLoc="firmware/BDT.h:84:11" LoopName="Compare"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="firmware/my_prj.cpp:13:0" msg_body="Unrolling loop 'VITIS_LOOP_14_1' (firmware/my_prj.cpp:14:20) in function 'copy_input' completely with a factor of 10">
+        <args Factor="10" LoopLoc="firmware/my_prj.cpp:14:20" LoopName="VITIS_LOOP_14_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/BDT.cpp:4:0" msg_body="Inlining function '$_0::operator()(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*) const' into '$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*) (.115)'">
+        <args Callee="$_0::operator()(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*) const" Callee-DebugLoc="File firmware/BDT.cpp Line 4 Column 0" Caller="$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*) (.115)" Caller-DebugLoc="File firmware/BDT.cpp Line 4 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/BDT.cpp:4:0" msg_body="Inlining function '$_0::operator()(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*) const (.96.152)' into '$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)'">
+        <args Callee="$_0::operator()(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*) const (.96.152)" Callee-DebugLoc="File firmware/BDT.cpp Line 4 Column 0" Caller="$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)" Caller-DebugLoc="File firmware/BDT.cpp Line 4 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Inlining function '$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)' into 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;0, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const'">
+        <args Callee="$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)" Callee-DebugLoc="File firmware/BDT.cpp Line 4 Column 0" Caller="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;0, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const" Caller-DebugLoc="File firmware/BDT.h Line 56 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Inlining function '$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)' into 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;1, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const'">
+        <args Callee="$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)" Callee-DebugLoc="File firmware/BDT.cpp Line 4 Column 0" Caller="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;1, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const" Caller-DebugLoc="File firmware/BDT.h Line 56 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Inlining function '$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)' into 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;2, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const'">
+        <args Callee="$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)" Callee-DebugLoc="File firmware/BDT.cpp Line 4 Column 0" Caller="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;2, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const" Caller-DebugLoc="File firmware/BDT.h Line 56 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Inlining function '$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)' into 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;3, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const'">
+        <args Callee="$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)" Callee-DebugLoc="File firmware/BDT.cpp Line 4 Column 0" Caller="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;3, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const" Caller-DebugLoc="File firmware/BDT.h Line 56 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Inlining function '$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)' into 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;4, 29, 15, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const'">
+        <args Callee="$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)" Callee-DebugLoc="File firmware/BDT.cpp Line 4 Column 0" Caller="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;4, 29, 15, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const" Caller-DebugLoc="File firmware/BDT.h Line 56 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Inlining function '$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)' into 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;5, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const'">
+        <args Callee="$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)" Callee-DebugLoc="File firmware/BDT.cpp Line 4 Column 0" Caller="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;5, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const" Caller-DebugLoc="File firmware/BDT.h Line 56 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Inlining function '$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)' into 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;6, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const'">
+        <args Callee="$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)" Callee-DebugLoc="File firmware/BDT.cpp Line 4 Column 0" Caller="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;6, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const" Caller-DebugLoc="File firmware/BDT.h Line 56 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Inlining function '$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)' into 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;7, 29, 15, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const'">
+        <args Callee="$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)" Callee-DebugLoc="File firmware/BDT.cpp Line 4 Column 0" Caller="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;7, 29, 15, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const" Caller-DebugLoc="File firmware/BDT.h Line 56 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Inlining function '$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)' into 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;8, 29, 15, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const'">
+        <args Callee="$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)" Callee-DebugLoc="File firmware/BDT.cpp Line 4 Column 0" Caller="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;8, 29, 15, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const" Caller-DebugLoc="File firmware/BDT.h Line 56 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Inlining function '$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)' into 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;9, 25, 13, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const'">
+        <args Callee="$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)" Callee-DebugLoc="File firmware/BDT.cpp Line 4 Column 0" Caller="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;9, 25, 13, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const" Caller-DebugLoc="File firmware/BDT.h Line 56 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Inlining function '$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)' into 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;10, 23, 12, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const'">
+        <args Callee="$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)" Callee-DebugLoc="File firmware/BDT.cpp Line 4 Column 0" Caller="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;10, 23, 12, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const" Caller-DebugLoc="File firmware/BDT.h Line 56 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Inlining function '$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)' into 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;11, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const'">
+        <args Callee="$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)" Callee-DebugLoc="File firmware/BDT.cpp Line 4 Column 0" Caller="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;11, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const" Caller-DebugLoc="File firmware/BDT.h Line 56 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Inlining function '$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)' into 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;12, 27, 14, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const'">
+        <args Callee="$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)" Callee-DebugLoc="File firmware/BDT.cpp Line 4 Column 0" Caller="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;12, 27, 14, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const" Caller-DebugLoc="File firmware/BDT.h Line 56 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Inlining function '$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)' into 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;13, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const'">
+        <args Callee="$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)" Callee-DebugLoc="File firmware/BDT.cpp Line 4 Column 0" Caller="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;13, 31, 16, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const" Caller-DebugLoc="File firmware/BDT.h Line 56 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Inlining function '$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)' into 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;14, 29, 15, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const'">
+        <args Callee="$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)" Callee-DebugLoc="File firmware/BDT.cpp Line 4 Column 0" Caller="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;14, 29, 15, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const" Caller-DebugLoc="File firmware/BDT.h Line 56 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Inlining function '$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)' into 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;15, 17, 9, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const'">
+        <args Callee="$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)" Callee-DebugLoc="File firmware/BDT.cpp Line 4 Column 0" Caller="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;15, 17, 9, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const" Caller-DebugLoc="File firmware/BDT.h Line 56 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Inlining function '$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)' into 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;16, 29, 15, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const'">
+        <args Callee="$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)" Callee-DebugLoc="File firmware/BDT.cpp Line 4 Column 0" Caller="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;16, 29, 15, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const" Caller-DebugLoc="File firmware/BDT.h Line 56 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Inlining function '$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)' into 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;17, 23, 12, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const'">
+        <args Callee="$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)" Callee-DebugLoc="File firmware/BDT.cpp Line 4 Column 0" Caller="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;17, 23, 12, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const" Caller-DebugLoc="File firmware/BDT.h Line 56 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/BDT.h:56:0" msg_body="Inlining function '$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)' into 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;18, 17, 9, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const'">
+        <args Callee="$_0::__invoke(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)" Callee-DebugLoc="File firmware/BDT.cpp Line 4 Column 0" Caller="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::Tree&lt;18, 17, 9, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, bool (*)(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*)) const" Caller-DebugLoc="File firmware/BDT.h Line 56 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/BDT.h:22:0" msg_body="Inlining function 'BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::operator()(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;) (.42.51)' into 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 2, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;) (.76)'">
+        <args Callee="BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::operator()(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;) (.42.51)" Callee-DebugLoc="File firmware/BDT.h Line 36 Column 0" Caller="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 2, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;) (.76)" Caller-DebugLoc="File firmware/BDT.h Line 22 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/BDT.h:22:0" msg_body="Inlining function 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 2, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;) (.76)' into 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 4, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;) (.83)'">
+        <args Callee="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 2, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;) (.76)" Callee-DebugLoc="File firmware/BDT.h Line 22 Column 0" Caller="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 4, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;) (.83)" Caller-DebugLoc="File firmware/BDT.h Line 22 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/BDT.h:22:0" msg_body="Inlining function 'BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::operator()(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;) (.42.51)' into 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 4, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;) (.83)'">
+        <args Callee="BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::operator()(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;) (.42.51)" Callee-DebugLoc="File firmware/BDT.h Line 36 Column 0" Caller="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 4, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;) (.83)" Caller-DebugLoc="File firmware/BDT.h Line 22 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/BDT.h:22:0" msg_body="Inlining function 'BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::operator()(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;) (.42.51)' into 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 8, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)'">
+        <args Callee="BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::operator()(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;) (.42.51)" Callee-DebugLoc="File firmware/BDT.h Line 36 Column 0" Caller="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 8, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)" Caller-DebugLoc="File firmware/BDT.h Line 22 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/BDT.h:22:0" msg_body="Inlining function 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 8, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)' into 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)'">
+        <args Callee="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 8, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)" Callee-DebugLoc="File firmware/BDT.h Line 22 Column 0" Caller="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)" Caller-DebugLoc="File firmware/BDT.h Line 22 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/BDT.h:22:0" msg_body="Inlining function 'BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::operator()(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;) (.42.51)' into 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)'">
+        <args Callee="BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::operator()(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;) (.42.51)" Callee-DebugLoc="File firmware/BDT.h Line 36 Column 0" Caller="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)" Caller-DebugLoc="File firmware/BDT.h Line 22 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/BDT.h:22:0" msg_body="Inlining function 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 2, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;) (.76)' into 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 3, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)'">
+        <args Callee="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 2, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;) (.76)" Callee-DebugLoc="File firmware/BDT.h Line 22 Column 0" Caller="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 3, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)" Caller-DebugLoc="File firmware/BDT.h Line 22 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/BDT.h:22:0" msg_body="Inlining function 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 1, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)' into 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 3, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)'">
+        <args Callee="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 1, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)" Callee-DebugLoc="File firmware/BDT.h Line 22 Column 0" Caller="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 3, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)" Caller-DebugLoc="File firmware/BDT.h Line 22 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/BDT.h:22:0" msg_body="Inlining function 'BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::operator()(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;) (.42.51)' into 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 3, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)'">
+        <args Callee="BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::operator()(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;) (.42.51)" Callee-DebugLoc="File firmware/BDT.h Line 36 Column 0" Caller="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 3, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)" Caller-DebugLoc="File firmware/BDT.h Line 22 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/BDT.h:22:0" msg_body="Inlining function 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)' into 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 19, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)'">
+        <args Callee="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 16, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)" Callee-DebugLoc="File firmware/BDT.h Line 22 Column 0" Caller="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 19, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)" Caller-DebugLoc="File firmware/BDT.h Line 22 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/BDT.h:22:0" msg_body="Inlining function 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 3, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)' into 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 19, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)'">
+        <args Callee="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 3, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)" Callee-DebugLoc="File firmware/BDT.h Line 22 Column 0" Caller="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 19, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)" Caller-DebugLoc="File firmware/BDT.h Line 22 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/BDT.h:22:0" msg_body="Inlining function 'BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::operator()(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;) (.42.51)' into 'ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 19, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)'">
+        <args Callee="BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::operator()(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;) (.42.51)" Callee-DebugLoc="File firmware/BDT.h Line 36 Column 0" Caller="ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; BDT::reduce&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 19, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt; &gt;(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; const*, BDT::OpAdd&lt;ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;)" Caller-DebugLoc="File firmware/BDT.h Line 22 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/my_prj.cpp:25:0" msg_body="Inlining function 'BDT::BDT&lt;19, 2, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*) const' into 'my_prj_accelerator(int, int&amp;, int&amp;, float*, float*)'">
+        <args Callee="BDT::BDT&lt;19, 2, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; [10], ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;::decision_function(ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*) const" Callee-DebugLoc="File firmware/BDT.h Line 138 Column 0" Caller="my_prj_accelerator(int, int&amp;, int&amp;, float*, float*)" Caller-DebugLoc="File firmware/my_prj.cpp Line 25 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="firmware/my_prj.cpp:25:0" msg_body="Inlining function 'copy_output(int, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, float*)' into 'my_prj_accelerator(int, int&amp;, int&amp;, float*, float*)'">
+        <args Callee="copy_output(int, ap_fixed&lt;18, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, float*)" Callee-DebugLoc="File firmware/my_prj.cpp Line 19 Column 0" Caller="my_prj_accelerator(int, int&amp;, int&amp;, float*, float*)" Caller-DebugLoc="File firmware/my_prj.cpp Line 25 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:170:0" msg_body="Applying array_partition to '_ZL9tree_0_18.41.parent': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_18.41.parent"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:170:0" msg_body="Applying array_partition to '_ZL9tree_0_18.41.children_right': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_18.41.children_right"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:170:0" msg_body="Applying array_partition to '_ZL9tree_0_18.41.children_left': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_18.41.children_left"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:170:0" msg_body="Applying array_partition to '_ZL9tree_0_18.41.value': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_18.41.value"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:170:0" msg_body="Applying array_partition to '_ZL9tree_0_18.41.threshold': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_18.41.threshold"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:170:0" msg_body="Applying array_partition to '_ZL9tree_0_18.41.feature': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_18.41.feature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:162:0" msg_body="Applying array_partition to '_ZL9tree_0_17.42.parent': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_17.42.parent"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:162:0" msg_body="Applying array_partition to '_ZL9tree_0_17.42.children_right': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_17.42.children_right"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:162:0" msg_body="Applying array_partition to '_ZL9tree_0_17.42.children_left': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_17.42.children_left"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:162:0" msg_body="Applying array_partition to '_ZL9tree_0_17.42.value': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_17.42.value"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:162:0" msg_body="Applying array_partition to '_ZL9tree_0_17.42.threshold': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_17.42.threshold"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:162:0" msg_body="Applying array_partition to '_ZL9tree_0_17.42.feature': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_17.42.feature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:154:0" msg_body="Applying array_partition to '_ZL9tree_0_16.43.parent': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_16.43.parent"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:154:0" msg_body="Applying array_partition to '_ZL9tree_0_16.43.children_right': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_16.43.children_right"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:154:0" msg_body="Applying array_partition to '_ZL9tree_0_16.43.children_left': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_16.43.children_left"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:154:0" msg_body="Applying array_partition to '_ZL9tree_0_16.43.value': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_16.43.value"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:154:0" msg_body="Applying array_partition to '_ZL9tree_0_16.43.threshold': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_16.43.threshold"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:154:0" msg_body="Applying array_partition to '_ZL9tree_0_16.43.feature': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_16.43.feature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:146:0" msg_body="Applying array_partition to '_ZL9tree_0_15.44.parent': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_15.44.parent"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:146:0" msg_body="Applying array_partition to '_ZL9tree_0_15.44.children_right': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_15.44.children_right"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:146:0" msg_body="Applying array_partition to '_ZL9tree_0_15.44.children_left': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_15.44.children_left"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:146:0" msg_body="Applying array_partition to '_ZL9tree_0_15.44.value': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_15.44.value"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:146:0" msg_body="Applying array_partition to '_ZL9tree_0_15.44.threshold': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_15.44.threshold"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:146:0" msg_body="Applying array_partition to '_ZL9tree_0_15.44.feature': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_15.44.feature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:138:0" msg_body="Applying array_partition to '_ZL9tree_0_14.45.parent': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_14.45.parent"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:138:0" msg_body="Applying array_partition to '_ZL9tree_0_14.45.children_right': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_14.45.children_right"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:138:0" msg_body="Applying array_partition to '_ZL9tree_0_14.45.children_left': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_14.45.children_left"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:138:0" msg_body="Applying array_partition to '_ZL9tree_0_14.45.value': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_14.45.value"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:138:0" msg_body="Applying array_partition to '_ZL9tree_0_14.45.threshold': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_14.45.threshold"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:138:0" msg_body="Applying array_partition to '_ZL9tree_0_14.45.feature': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_14.45.feature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:130:0" msg_body="Applying array_partition to '_ZL9tree_0_13.46.parent': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_13.46.parent"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:130:0" msg_body="Applying array_partition to '_ZL9tree_0_13.46.children_right': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_13.46.children_right"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:130:0" msg_body="Applying array_partition to '_ZL9tree_0_13.46.children_left': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_13.46.children_left"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:130:0" msg_body="Applying array_partition to '_ZL9tree_0_13.46.value': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_13.46.value"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:130:0" msg_body="Applying array_partition to '_ZL9tree_0_13.46.threshold': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_13.46.threshold"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:130:0" msg_body="Applying array_partition to '_ZL9tree_0_13.46.feature': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_13.46.feature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:122:0" msg_body="Applying array_partition to '_ZL9tree_0_12.47.parent': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_12.47.parent"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:122:0" msg_body="Applying array_partition to '_ZL9tree_0_12.47.children_right': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_12.47.children_right"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:122:0" msg_body="Applying array_partition to '_ZL9tree_0_12.47.children_left': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_12.47.children_left"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:122:0" msg_body="Applying array_partition to '_ZL9tree_0_12.47.value': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_12.47.value"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:122:0" msg_body="Applying array_partition to '_ZL9tree_0_12.47.threshold': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_12.47.threshold"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:122:0" msg_body="Applying array_partition to '_ZL9tree_0_12.47.feature': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_12.47.feature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:114:0" msg_body="Applying array_partition to '_ZL9tree_0_11.48.parent': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_11.48.parent"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:114:0" msg_body="Applying array_partition to '_ZL9tree_0_11.48.children_right': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_11.48.children_right"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:114:0" msg_body="Applying array_partition to '_ZL9tree_0_11.48.children_left': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_11.48.children_left"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:114:0" msg_body="Applying array_partition to '_ZL9tree_0_11.48.value': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_11.48.value"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:114:0" msg_body="Applying array_partition to '_ZL9tree_0_11.48.threshold': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_11.48.threshold"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:114:0" msg_body="Applying array_partition to '_ZL9tree_0_11.48.feature': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_11.48.feature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:106:0" msg_body="Applying array_partition to '_ZL9tree_0_10.49.parent': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_10.49.parent"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:106:0" msg_body="Applying array_partition to '_ZL9tree_0_10.49.children_right': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_10.49.children_right"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:106:0" msg_body="Applying array_partition to '_ZL9tree_0_10.49.children_left': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_10.49.children_left"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:106:0" msg_body="Applying array_partition to '_ZL9tree_0_10.49.value': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_10.49.value"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:106:0" msg_body="Applying array_partition to '_ZL9tree_0_10.49.threshold': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_10.49.threshold"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:106:0" msg_body="Applying array_partition to '_ZL9tree_0_10.49.feature': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL9tree_0_10.49.feature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:98:0" msg_body="Applying array_partition to '_ZL8tree_0_9.50.parent': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_9.50.parent"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:98:0" msg_body="Applying array_partition to '_ZL8tree_0_9.50.children_right': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_9.50.children_right"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:98:0" msg_body="Applying array_partition to '_ZL8tree_0_9.50.children_left': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_9.50.children_left"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:98:0" msg_body="Applying array_partition to '_ZL8tree_0_9.50.value': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_9.50.value"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:98:0" msg_body="Applying array_partition to '_ZL8tree_0_9.50.threshold': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_9.50.threshold"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:98:0" msg_body="Applying array_partition to '_ZL8tree_0_9.50.feature': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_9.50.feature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:90:0" msg_body="Applying array_partition to '_ZL8tree_0_8.51.parent': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_8.51.parent"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:90:0" msg_body="Applying array_partition to '_ZL8tree_0_8.51.children_right': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_8.51.children_right"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:90:0" msg_body="Applying array_partition to '_ZL8tree_0_8.51.children_left': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_8.51.children_left"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:90:0" msg_body="Applying array_partition to '_ZL8tree_0_8.51.value': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_8.51.value"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:90:0" msg_body="Applying array_partition to '_ZL8tree_0_8.51.threshold': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_8.51.threshold"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:90:0" msg_body="Applying array_partition to '_ZL8tree_0_8.51.feature': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_8.51.feature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:82:0" msg_body="Applying array_partition to '_ZL8tree_0_7.52.parent': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_7.52.parent"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:82:0" msg_body="Applying array_partition to '_ZL8tree_0_7.52.children_right': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_7.52.children_right"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:82:0" msg_body="Applying array_partition to '_ZL8tree_0_7.52.children_left': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_7.52.children_left"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:82:0" msg_body="Applying array_partition to '_ZL8tree_0_7.52.value': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_7.52.value"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:82:0" msg_body="Applying array_partition to '_ZL8tree_0_7.52.threshold': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_7.52.threshold"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:82:0" msg_body="Applying array_partition to '_ZL8tree_0_7.52.feature': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_7.52.feature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:74:0" msg_body="Applying array_partition to '_ZL8tree_0_6.53.parent': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_6.53.parent"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:74:0" msg_body="Applying array_partition to '_ZL8tree_0_6.53.children_right': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_6.53.children_right"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:74:0" msg_body="Applying array_partition to '_ZL8tree_0_6.53.children_left': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_6.53.children_left"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:74:0" msg_body="Applying array_partition to '_ZL8tree_0_6.53.value': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_6.53.value"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:74:0" msg_body="Applying array_partition to '_ZL8tree_0_6.53.threshold': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_6.53.threshold"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:74:0" msg_body="Applying array_partition to '_ZL8tree_0_6.53.feature': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_6.53.feature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:66:0" msg_body="Applying array_partition to '_ZL8tree_0_5.54.parent': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_5.54.parent"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:66:0" msg_body="Applying array_partition to '_ZL8tree_0_5.54.children_right': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_5.54.children_right"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:66:0" msg_body="Applying array_partition to '_ZL8tree_0_5.54.children_left': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_5.54.children_left"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:66:0" msg_body="Applying array_partition to '_ZL8tree_0_5.54.value': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_5.54.value"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:66:0" msg_body="Applying array_partition to '_ZL8tree_0_5.54.threshold': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_5.54.threshold"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:66:0" msg_body="Applying array_partition to '_ZL8tree_0_5.54.feature': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_5.54.feature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:58:0" msg_body="Applying array_partition to '_ZL8tree_0_4.55.parent': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_4.55.parent"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:58:0" msg_body="Applying array_partition to '_ZL8tree_0_4.55.children_right': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_4.55.children_right"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:58:0" msg_body="Applying array_partition to '_ZL8tree_0_4.55.children_left': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_4.55.children_left"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:58:0" msg_body="Applying array_partition to '_ZL8tree_0_4.55.value': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_4.55.value"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:58:0" msg_body="Applying array_partition to '_ZL8tree_0_4.55.threshold': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_4.55.threshold"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:58:0" msg_body="Applying array_partition to '_ZL8tree_0_4.55.feature': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_4.55.feature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:50:0" msg_body="Applying array_partition to '_ZL8tree_0_3.56.parent': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_3.56.parent"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:50:0" msg_body="Applying array_partition to '_ZL8tree_0_3.56.children_right': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_3.56.children_right"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:50:0" msg_body="Applying array_partition to '_ZL8tree_0_3.56.children_left': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_3.56.children_left"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:50:0" msg_body="Applying array_partition to '_ZL8tree_0_3.56.value': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_3.56.value"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:50:0" msg_body="Applying array_partition to '_ZL8tree_0_3.56.threshold': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_3.56.threshold"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:50:0" msg_body="Applying array_partition to '_ZL8tree_0_3.56.feature': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_3.56.feature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:42:0" msg_body="Applying array_partition to '_ZL8tree_0_2.57.parent': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_2.57.parent"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:42:0" msg_body="Applying array_partition to '_ZL8tree_0_2.57.children_right': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_2.57.children_right"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:42:0" msg_body="Applying array_partition to '_ZL8tree_0_2.57.children_left': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_2.57.children_left"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:42:0" msg_body="Applying array_partition to '_ZL8tree_0_2.57.value': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_2.57.value"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:42:0" msg_body="Applying array_partition to '_ZL8tree_0_2.57.threshold': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_2.57.threshold"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:42:0" msg_body="Applying array_partition to '_ZL8tree_0_2.57.feature': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_2.57.feature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:34:0" msg_body="Applying array_partition to '_ZL8tree_0_1.58.parent': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_1.58.parent"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:34:0" msg_body="Applying array_partition to '_ZL8tree_0_1.58.children_right': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_1.58.children_right"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:34:0" msg_body="Applying array_partition to '_ZL8tree_0_1.58.children_left': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_1.58.children_left"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:34:0" msg_body="Applying array_partition to '_ZL8tree_0_1.58.value': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_1.58.value"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:34:0" msg_body="Applying array_partition to '_ZL8tree_0_1.58.threshold': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_1.58.threshold"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:34:0" msg_body="Applying array_partition to '_ZL8tree_0_1.58.feature': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_1.58.feature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:26:0" msg_body="Applying array_partition to '_ZL8tree_0_0.59.parent': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_0.59.parent"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:26:0" msg_body="Applying array_partition to '_ZL8tree_0_0.59.children_right': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_0.59.children_right"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:26:0" msg_body="Applying array_partition to '_ZL8tree_0_0.59.children_left': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_0.59.children_left"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:26:0" msg_body="Applying array_partition to '_ZL8tree_0_0.59.value': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_0.59.value"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:26:0" msg_body="Applying array_partition to '_ZL8tree_0_0.59.threshold': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_0.59.threshold"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/parameters.h:26:0" msg_body="Applying array_partition to '_ZL8tree_0_0.59.feature': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL8tree_0_0.59.feature"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/BDT.h:76:13" msg_body="Applying array_partition to 'value_leaf': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="value_leaf"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="firmware/BDT.h:139:13" msg_body="Applying array_partition to 'scores.i': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="scores.i"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

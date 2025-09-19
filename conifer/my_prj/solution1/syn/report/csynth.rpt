@@ -1,0 +1,174 @@
+
+
+================================================================
+== Synthesis Summary Report of 'my_prj'
+================================================================
++ General Information: 
+    * Date:           Fri Sep 19 13:38:25 2025
+    * Version:        2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:        my_prj
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-----------------------------------------------------------------+------+------+---------+--------+----------+---------+------+----------+------+----+-------------+-------------+-----+
+    |                             Modules                             | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |    |             |             |     |
+    |                             & Loops                             | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|      FF     |     LUT     | URAM|
+    +-----------------------------------------------------------------+------+------+---------+--------+----------+---------+------+----------+------+----+-------------+-------------+-----+
+    |+ my_prj                                                         |    II|  0.04|        8|  40.000|         -|        1|     -|       yes|     -|   -|  10680 (10%)|  13815 (25%)|    -|
+    | + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_18  |     -|  0.58|        4|  20.000|         -|        1|     -|       yes|     -|   -|    689 (~0%)|     839 (1%)|    -|
+    | + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_17  |     -|  0.58|        4|  20.000|         -|        1|     -|       yes|     -|   -|    707 (~0%)|     839 (1%)|    -|
+    | + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_7   |     -|  0.58|        4|  20.000|         -|        1|     -|       yes|     -|   -|    688 (~0%)|     839 (1%)|    -|
+    | + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_6   |     -|  0.54|        4|  20.000|         -|        1|     -|       yes|     -|   -|    484 (~0%)|     756 (1%)|    -|
+    | + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_5   |     -|  0.54|        4|  20.000|         -|        1|     -|       yes|     -|   -|    645 (~0%)|     783 (1%)|    -|
+    | + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_4   |     -|  0.58|        4|  20.000|         -|        1|     -|       yes|     -|   -|    688 (~0%)|     839 (1%)|    -|
+    | + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_3   |     -|  0.58|        4|  20.000|         -|        1|     -|       yes|     -|   -|    688 (~0%)|     828 (1%)|    -|
+    | + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_2   |     -|  0.38|        3|  15.000|         -|        1|     -|       yes|     -|   -|    349 (~0%)|     639 (1%)|    -|
+    | + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_1   |     -|  0.58|        4|  20.000|         -|        1|     -|       yes|     -|   -|    705 (~0%)|     810 (1%)|    -|
+    | + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_s   |     -|  0.07|        4|  20.000|         -|        1|     -|       yes|     -|   -|    622 (~0%)|     719 (1%)|    -|
+    | + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_16  |     -|  0.54|        3|  15.000|         -|        1|     -|       yes|     -|   -|    233 (~0%)|    496 (~0%)|    -|
+    | + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_15  |     -|  0.58|        4|  20.000|         -|        1|     -|       yes|     -|   -|    724 (~0%)|     839 (1%)|    -|
+    | + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_14  |     -|  0.58|        4|  20.000|         -|        1|     -|       yes|     -|   -|    558 (~0%)|     728 (1%)|    -|
+    | + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_13  |     -|  0.58|        4|  20.000|         -|        1|     -|       yes|     -|   -|    706 (~0%)|     839 (1%)|    -|
+    | + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_12  |     -|  0.58|        4|  20.000|         -|        1|     -|       yes|     -|   -|    671 (~0%)|     814 (1%)|    -|
+    | + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_11  |     -|  0.25|        3|  15.000|         -|        1|     -|       yes|     -|   -|    205 (~0%)|    378 (~0%)|    -|
+    | + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_10  |     -|  0.38|        3|  15.000|         -|        1|     -|       yes|     -|   -|    386 (~0%)|     652 (1%)|    -|
+    | + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_9   |     -|  0.54|        3|  15.000|         -|        1|     -|       yes|     -|   -|    295 (~0%)|    515 (~0%)|    -|
+    | + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_8   |     -|  0.54|        3|  15.000|         -|        1|     -|       yes|     -|   -|    272 (~0%)|    391 (~0%)|    -|
+    +-----------------------------------------------------------------+------+------+---------+--------+----------+---------+------+----------+------+----+-------------+-------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++---------+---------+-----------+----------+
+| Port    | Mode    | Direction | Bitwidth |
++---------+---------+-----------+----------+
+| score_0 | ap_vld  | out       | 18       |
+| score_1 | ap_none | in        | 18       |
+| x_0     | ap_none | in        | 18       |
+| x_1     | ap_none | in        | 18       |
+| x_2     | ap_none | in        | 18       |
+| x_3     | ap_none | in        | 18       |
+| x_4     | ap_none | in        | 18       |
+| x_5     | ap_none | in        | 18       |
+| x_6     | ap_none | in        | 18       |
+| x_7     | ap_none | in        | 18       |
+| x_8     | ap_none | in        | 18       |
+| x_9     | ap_none | in        | 18       |
++---------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+--------------------------------------+
+| Argument | Direction | Datatype                             |
++----------+-----------+--------------------------------------+
+| x        | in        | ap_fixed<18, 8, AP_TRN, AP_WRAP, 0>* |
+| score    | out       | ap_fixed<18, 8, AP_TRN, AP_WRAP, 0>* |
++----------+-----------+--------------------------------------+
+
+* SW-to-HW Mapping
++----------+----------------+---------+
+| Argument | HW Interface   | HW Type |
++----------+----------------+---------+
+| x        | x_0            | port    |
+| x        | x_1            | port    |
+| x        | x_2            | port    |
+| x        | x_3            | port    |
+| x        | x_4            | port    |
+| x        | x_5            | port    |
+| x        | x_6            | port    |
+| x        | x_7            | port    |
+| x        | x_8            | port    |
+| x        | x_9            | port    |
+| score    | score_0        | port    |
+| score    | score_0_ap_vld | port    |
+| score    | score_1        | port    |
++----------+----------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------+-----+--------+-------------+-----+--------+---------+
+| Name                    | DSP | Pragma | Variable    | Op  | Impl   | Latency |
++-------------------------+-----+--------+-------------+-----+--------+---------+
+| + my_prj                | 0   |        |             |     |        |         |
+|   add_ln36_fu_517_p2    |     |        | add_ln36    | add | fabric | 0       |
+|   add_ln36_1_fu_527_p2  |     |        | add_ln36_1  | add | fabric | 0       |
+|   add_ln36_2_fu_537_p2  |     |        | add_ln36_2  | add | fabric | 0       |
+|   add_ln36_3_fu_588_p2  |     |        | add_ln36_3  | add | fabric | 0       |
+|   add_ln36_4_fu_594_p2  |     |        | add_ln36_4  | add | fabric | 0       |
+|   add_ln36_5_fu_604_p2  |     |        | add_ln36_5  | add | fabric | 0       |
+|   add_ln36_6_fu_657_p2  |     |        | add_ln36_6  | add | fabric | 0       |
+|   add_ln36_7_fu_667_p2  |     |        | add_ln36_7  | add | fabric | 0       |
+|   add_ln36_8_fu_543_p2  |     |        | add_ln36_8  | add | fabric | 0       |
+|   add_ln36_9_fu_610_p2  |     |        | add_ln36_9  | add | fabric | 0       |
+|   add_ln36_10_fu_620_p2 |     |        | add_ln36_10 | add | fabric | 0       |
+|   add_ln36_11_fu_679_p2 |     |        | add_ln36_11 | add | fabric | 0       |
+|   add_ln36_12_fu_626_p2 |     |        | add_ln36_12 | add | fabric | 0       |
+|   add_ln36_13_fu_632_p2 |     |        | add_ln36_13 | add | fabric | 0       |
+|   add_ln36_14_fu_642_p2 |     |        | add_ln36_14 | add | fabric | 0       |
+|   add_ln36_15_fu_695_p2 |     |        | add_ln36_15 | add | fabric | 0       |
+|   add_ln36_16_fu_705_p2 |     |        | add_ln36_16 | add | fabric | 0       |
+|   add_ln36_17_fu_717_p2 |     |        | add_ln36_17 | add | fabric | 0       |
++-------------------------+-----+--------+-------------+-----+--------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Pragmas with Warnings
++--------+---------+---------------------------------+-----------------------------------------------------------+
+| Type   | Options | Location                        | Messages                                                  |
++--------+---------+---------------------------------+-----------------------------------------------------------+
+| unroll |         | firmware/my_prj.cpp:9 in my_prj | '#pragma HLS unroll' can only be applied inside loop body |
++--------+---------+---------------------------------+-----------------------------------------------------------+
+
+* Valid Pragma Syntax
++-----------------+--------------------------+---------------------------------------------------------+
+| Type            | Options                  | Location                                                |
++-----------------+--------------------------+---------------------------------------------------------+
+| pipeline        | II = 1                   | firmware/BDT.h:57 in decision_function                  |
+| array_partition | variable=feature         | firmware/BDT.h:58 in decision_function, feature         |
+| array_partition | variable=threshold       | firmware/BDT.h:59 in decision_function, threshold       |
+| array_partition | variable=value           | firmware/BDT.h:60 in decision_function, value           |
+| array_partition | variable=children_left   | firmware/BDT.h:61 in decision_function, children_left   |
+| array_partition | variable=children_right  | firmware/BDT.h:62 in decision_function, children_right  |
+| array_partition | variable=parent          | firmware/BDT.h:63 in decision_function, parent          |
+| array_partition | variable=comparison      | firmware/BDT.h:78 in decision_function, comparison      |
+| array_partition | variable=activation      | firmware/BDT.h:79 in decision_function, activation      |
+| array_partition | variable=activation_leaf | firmware/BDT.h:80 in decision_function, activation_leaf |
+| array_partition | variable=value_leaf      | firmware/BDT.h:81 in decision_function, value_leaf      |
+| unroll          |                          | firmware/BDT.h:85 in decision_function                  |
+| unroll          |                          | firmware/BDT.h:98 in decision_function                  |
+| array_partition | variable=scores dim=0    | firmware/BDT.h:140 in decision_function, scores         |
+| array_partition | variable=x               | firmware/my_prj.cpp:6 in my_prj, x                      |
+| array_partition | variable=score           | firmware/my_prj.cpp:7 in my_prj, score                  |
+| pipeline        |                          | firmware/my_prj.cpp:8 in my_prj                         |
+| pipeline        |                          | firmware/my_prj.cpp:29 in my_prj_accelerator            |
++-----------------+--------------------------+---------------------------------------------------------+
+
+

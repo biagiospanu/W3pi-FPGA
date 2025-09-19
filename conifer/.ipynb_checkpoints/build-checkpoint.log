@@ -1,0 +1,48 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+  **** SW Build 4023990 on Oct 11 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source /opt/tools/Xilinx/Vitis_HLS/2023.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/opt/tools/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'bspanu' on host 'c33aa6035e82' (Linux_x86_64 version 5.4.0-169-generic) on Tue Sep 02 08:21:28 UTC 2025
+INFO: [HLS 200-10] On os Ubuntu 24.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/bspanu/hackathon/conifer'
+INFO: [HLS 200-2053] The vitis_hls executable is being deprecated. Consider using vitis-run --mode hls --tcl
+Sourcing Tcl script 'build_hls.tcl'
+INFO: [HLS 200-1510] Running: open_project my_prj 
+INFO: [HLS 200-10] Creating and opening project '/home/bspanu/hackathon/conifer/my_prj'.
+INFO: [HLS 200-1510] Running: set_top my_prj 
+INFO: [HLS 200-1510] Running: add_files firmware/BDT.h -cflags -std=c++0x 
+INFO: [HLS 200-10] Adding design file 'firmware/BDT.h' to the project
+INFO: [HLS 200-1510] Running: add_files firmware/BDT.cpp -cflags -std=c++0x 
+INFO: [HLS 200-10] Adding design file 'firmware/BDT.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files firmware/my_prj.cpp -cflags -std=c++0x 
+INFO: [HLS 200-10] Adding design file 'firmware/my_prj.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb my_prj_test.cpp -cflags -I firmware/ -std=c++0x 
+INFO: [HLS 200-10] Adding test bench file 'my_prj_test.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb tb_data 
+INFO: [HLS 200-10] Adding test bench file 'tb_data' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 
+INFO: [HLS 200-10] Creating and opening solution '/home/bspanu/hackathon/conifer/my_prj/solution1'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: open_solution -reset solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening and resetting solution '/home/bspanu/hackathon/conifer/my_prj/solution1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: set_part XC7Z020-1CLG400C 
+ERROR: [HLS 200-1023] Part 'XC7Z020-1CLG400C' is not installed.
+command 'create_platform' returned error code
+    while executing
+"source build_hls.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 [list source $tclfile] "
+
+INFO: [HLS 200-112] Total CPU user time: 1.74 seconds. Total CPU system time: 0.35 seconds. Total elapsed time: 2.16 seconds; peak allocated memory: 237.785 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Tue Sep  2 08:21:29 2025...

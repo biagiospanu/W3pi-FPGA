@@ -1,0 +1,50 @@
+/home/bspanu/repo/prj_conifer_pynq/conifer_xgboost_moons/solution1/.autopilot/db/conifer_xgboost_moons.pp.0.cpp:1329:7: warning: Added loop label VITIS_LOOP_1207_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1207_1: 
+/home/bspanu/repo/prj_conifer_pynq/conifer_xgboost_moons/solution1/.autopilot/db/conifer_xgboost_moons.pp.0.cpp:1329:7: note: FIX-IT applied suggested code changes
+/home/bspanu/repo/prj_conifer_pynq/conifer_xgboost_moons/solution1/.autopilot/db/conifer_xgboost_moons.pp.0.cpp:2303:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+/home/bspanu/repo/prj_conifer_pynq/conifer_xgboost_moons/solution1/.autopilot/db/conifer_xgboost_moons.pp.0.cpp:2303:5: note: FIX-IT applied suggested code changes
+/home/bspanu/repo/prj_conifer_pynq/conifer_xgboost_moons/solution1/.autopilot/db/conifer_xgboost_moons.pp.0.cpp:2317:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+/home/bspanu/repo/prj_conifer_pynq/conifer_xgboost_moons/solution1/.autopilot/db/conifer_xgboost_moons.pp.0.cpp:2317:5: note: FIX-IT applied suggested code changes
+/home/bspanu/repo/prj_conifer_pynq/conifer_xgboost_moons/solution1/.autopilot/db/conifer_xgboost_moons.pp.0.cpp:2331:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+/home/bspanu/repo/prj_conifer_pynq/conifer_xgboost_moons/solution1/.autopilot/db/conifer_xgboost_moons.pp.0.cpp:2331:5: note: FIX-IT applied suggested code changes
+/home/bspanu/repo/prj_conifer_pynq/conifer_xgboost_moons/solution1/.autopilot/db/conifer_xgboost_moons.pp.0.cpp:3948:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1247_1: 
+/home/bspanu/repo/prj_conifer_pynq/conifer_xgboost_moons/solution1/.autopilot/db/conifer_xgboost_moons.pp.0.cpp:3948:7: note: FIX-IT applied suggested code changes
+/home/bspanu/repo/prj_conifer_pynq/conifer_xgboost_moons/solution1/.autopilot/db/conifer_xgboost_moons.pp.0.cpp:28731:5: warning: Added loop label VITIS_LOOP_119_1:   [xilinx-label-all-loops]
+    for(int i = 0; i < n_leaves; i++){
+    ^~~
+    VITIS_LOOP_119_1: 
+/home/bspanu/repo/prj_conifer_pynq/conifer_xgboost_moons/solution1/.autopilot/db/conifer_xgboost_moons.pp.0.cpp:28731:5: note: FIX-IT applied suggested code changes
+/home/bspanu/repo/prj_conifer_pynq/conifer_xgboost_moons/solution1/.autopilot/db/conifer_xgboost_moons.pp.0.cpp:28764:5: warning: Added loop label VITIS_LOOP_152_1:   [xilinx-label-all-loops]
+    for(int j = 0; j < fn_classes(n_classes); j++){
+    ^~~
+    VITIS_LOOP_152_1: 
+/home/bspanu/repo/prj_conifer_pynq/conifer_xgboost_moons/solution1/.autopilot/db/conifer_xgboost_moons.pp.0.cpp:28764:5: note: FIX-IT applied suggested code changes
+/home/bspanu/repo/prj_conifer_pynq/conifer_xgboost_moons/solution1/.autopilot/db/conifer_xgboost_moons.pp.0.cpp:28976:3: warning: Added loop label VITIS_LOOP_14_1:   [xilinx-label-all-loops]
+  for(int i = 0; i < n_features; i++){
+  ^~~
+  VITIS_LOOP_14_1: 
+/home/bspanu/repo/prj_conifer_pynq/conifer_xgboost_moons/solution1/.autopilot/db/conifer_xgboost_moons.pp.0.cpp:28976:3: note: FIX-IT applied suggested code changes
+/home/bspanu/repo/prj_conifer_pynq/conifer_xgboost_moons/solution1/.autopilot/db/conifer_xgboost_moons.pp.0.cpp:28982:3: warning: Added loop label VITIS_LOOP_20_1:   [xilinx-label-all-loops]
+  for(int i = 0; i < BDT::fn_classes(n_classes); i++){
+  ^~~
+  VITIS_LOOP_20_1: 
+/home/bspanu/repo/prj_conifer_pynq/conifer_xgboost_moons/solution1/.autopilot/db/conifer_xgboost_moons.pp.0.cpp:28982:3: note: FIX-IT applied suggested code changes
+/home/bspanu/repo/prj_conifer_pynq/conifer_xgboost_moons/solution1/.autopilot/db/conifer_xgboost_moons.pp.0.cpp:29002:3: warning: Added loop label VITIS_LOOP_36_1:   [xilinx-label-all-loops]
+  for(int n = 0; n < N; n++){
+  ^~~
+  VITIS_LOOP_36_1: 
+/home/bspanu/repo/prj_conifer_pynq/conifer_xgboost_moons/solution1/.autopilot/db/conifer_xgboost_moons.pp.0.cpp:29002:3: note: FIX-IT applied suggested code changes

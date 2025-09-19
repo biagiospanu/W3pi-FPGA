@@ -1,0 +1,23 @@
+<AutoPilot:solution xmlns:AutoPilot="com.autoesl.autopilot.solution">
+    <name>
+        <value string="solution1"/>
+    </name>
+    <project>
+        <value string="conifer_xgboost_moons"/>
+    </project>
+    <flowTarget value="vivado"/>
+    <targetInfo>
+        <TargetInfo value="xc7z020:-clg400:-1"/>
+    </targetInfo>
+    <libraryList>
+        <library value="xilinx/zynq/zynq" name="DefaultPlatform"/>
+    </libraryList>
+    <clockList>
+        <clock name="default" period="5" default="false"/>
+    </clockList>
+    <config>
+        <config_interface m_axi_addr64="0"/>
+        <config_export format="ip_catalog" ipname="conifer_xgboost_moons_accelerator" library="conifer" vendor="cern.ch" version="1.7"/>
+    </config>
+</AutoPilot:solution>
+

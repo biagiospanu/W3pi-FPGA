@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "my_prj",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "my_prj"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/bspanu/repo/conifer/build_hls.tcl",
+    "sourceLine": 54,
+    "success": true
+  }
+]

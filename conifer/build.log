@@ -1,0 +1,814 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+  **** SW Build 4023990 on Oct 11 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source /opt/tools/Xilinx/Vitis_HLS/2023.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/opt/tools/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'bspanu' on host '8584d3dcbac9' (Linux_x86_64 version 5.4.0-169-generic) on Fri Sep 19 13:37:55 UTC 2025
+INFO: [HLS 200-10] On os Ubuntu 24.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/bspanu/repo/conifer'
+INFO: [HLS 200-2053] The vitis_hls executable is being deprecated. Consider using vitis-run --mode hls --tcl
+Sourcing Tcl script 'build_hls.tcl'
+INFO: [HLS 200-1510] Running: open_project my_prj 
+INFO: [HLS 200-10] Creating and opening project '/home/bspanu/repo/conifer/my_prj'.
+INFO: [HLS 200-1510] Running: set_top my_prj 
+INFO: [HLS 200-1510] Running: add_files firmware/BDT.h -cflags -std=c++0x 
+INFO: [HLS 200-10] Adding design file 'firmware/BDT.h' to the project
+INFO: [HLS 200-1510] Running: add_files firmware/BDT.cpp -cflags -std=c++0x 
+INFO: [HLS 200-10] Adding design file 'firmware/BDT.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files firmware/my_prj.cpp -cflags -std=c++0x 
+INFO: [HLS 200-10] Adding design file 'firmware/my_prj.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb my_prj_test.cpp -cflags -I firmware/ -std=c++0x 
+INFO: [HLS 200-10] Adding test bench file 'my_prj_test.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb tb_data 
+INFO: [HLS 200-10] Adding test bench file 'tb_data' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 
+INFO: [HLS 200-10] Creating and opening solution '/home/bspanu/repo/conifer/my_prj/solution1'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: open_solution -reset solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening and resetting solution '/home/bspanu/repo/conifer/my_prj/solution1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64=false 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 257.098 MB.
+INFO: [HLS 200-10] Analyzing design file 'firmware/my_prj.cpp' ... 
+WARNING: [HLS 207-5583] '#pragma HLS unroll' can only be applied inside loop body (firmware/my_prj.cpp:9:9)
+INFO: [HLS 200-10] Analyzing design file 'firmware/BDT.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 8.74 seconds. CPU system time: 2.07 seconds. Elapsed time: 11.43 seconds; current allocated memory: 259.527 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 9,394 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /home/bspanu/repo/conifer/my_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 30,303 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /home/bspanu/repo/conifer/my_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 6,997 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /home/bspanu/repo/conifer/my_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 6,026 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /home/bspanu/repo/conifer/my_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 5,458 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /home/bspanu/repo/conifer/my_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 3,070 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /home/bspanu/repo/conifer/my_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,971 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /home/bspanu/repo/conifer/my_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,971 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /home/bspanu/repo/conifer/my_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,971 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /home/bspanu/repo/conifer/my_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,971 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /home/bspanu/repo/conifer/my_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,786 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: /home/bspanu/repo/conifer/my_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,786 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /home/bspanu/repo/conifer/my_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,786 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /home/bspanu/repo/conifer/my_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,786 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /home/bspanu/repo/conifer/my_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,810 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: /home/bspanu/repo/conifer/my_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,759 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /home/bspanu/repo/conifer/my_prj/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-377] Adding 'tree_0_18 (.41)' into disaggregation list because there's array-partition pragma applied on the struct field (firmware/BDT.cpp:26:29)
+INFO: [HLS 214-377] Adding 'tree_0_17 (.42)' into disaggregation list because there's array-partition pragma applied on the struct field (firmware/BDT.cpp:25:29)
+INFO: [HLS 214-377] Adding 'tree_0_16 (.43)' into disaggregation list because there's array-partition pragma applied on the struct field (firmware/BDT.cpp:24:29)
+INFO: [HLS 214-377] Adding 'tree_0_15 (.44)' into disaggregation list because there's array-partition pragma applied on the struct field (firmware/BDT.cpp:23:29)
+INFO: [HLS 214-377] Adding 'tree_0_14 (.45)' into disaggregation list because there's array-partition pragma applied on the struct field (firmware/BDT.cpp:22:29)
+INFO: [HLS 214-377] Adding 'tree_0_13 (.46)' into disaggregation list because there's array-partition pragma applied on the struct field (firmware/BDT.cpp:21:29)
+INFO: [HLS 214-377] Adding 'tree_0_12 (.47)' into disaggregation list because there's array-partition pragma applied on the struct field (firmware/BDT.cpp:20:29)
+INFO: [HLS 214-377] Adding 'tree_0_11 (.48)' into disaggregation list because there's array-partition pragma applied on the struct field (firmware/BDT.cpp:19:29)
+INFO: [HLS 214-377] Adding 'tree_0_10 (.49)' into disaggregation list because there's array-partition pragma applied on the struct field (firmware/BDT.cpp:18:29)
+INFO: [HLS 214-377] Adding 'tree_0_9 (.50)' into disaggregation list because there's array-partition pragma applied on the struct field (firmware/BDT.cpp:17:27)
+INFO: [HLS 214-377] Adding 'tree_0_8 (.51)' into disaggregation list because there's array-partition pragma applied on the struct field (firmware/BDT.cpp:16:27)
+INFO: [HLS 214-377] Adding 'tree_0_7 (.52)' into disaggregation list because there's array-partition pragma applied on the struct field (firmware/BDT.cpp:15:27)
+INFO: [HLS 214-377] Adding 'tree_0_6 (.53)' into disaggregation list because there's array-partition pragma applied on the struct field (firmware/BDT.cpp:14:27)
+INFO: [HLS 214-377] Adding 'tree_0_5 (.54)' into disaggregation list because there's array-partition pragma applied on the struct field (firmware/BDT.cpp:13:27)
+INFO: [HLS 214-377] Adding 'tree_0_4 (.55)' into disaggregation list because there's array-partition pragma applied on the struct field (firmware/BDT.cpp:12:27)
+INFO: [HLS 214-377] Adding 'tree_0_3 (.56)' into disaggregation list because there's array-partition pragma applied on the struct field (firmware/BDT.cpp:11:27)
+INFO: [HLS 214-377] Adding 'tree_0_2 (.57)' into disaggregation list because there's array-partition pragma applied on the struct field (firmware/BDT.cpp:10:27)
+INFO: [HLS 214-377] Adding 'tree_0_1 (.58)' into disaggregation list because there's array-partition pragma applied on the struct field (firmware/BDT.cpp:9:27)
+INFO: [HLS 214-377] Adding 'tree_0_0 (.59)' into disaggregation list because there's array-partition pragma applied on the struct field (firmware/BDT.cpp:8:27)
+INFO: [HLS 214-210] Disaggregating variable 'tree_0_0 (.59)' (firmware/parameters.h:26:0)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'tree_0_1 (.58)' (firmware/parameters.h:34:0)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'tree_0_2 (.57)' (firmware/parameters.h:42:0)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'tree_0_3 (.56)' (firmware/parameters.h:50:0)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'tree_0_4 (.55)' (firmware/parameters.h:58:0)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'tree_0_5 (.54)' (firmware/parameters.h:66:0)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'tree_0_6 (.53)' (firmware/parameters.h:74:0)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'tree_0_7 (.52)' (firmware/parameters.h:82:0)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'tree_0_8 (.51)' (firmware/parameters.h:90:0)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'tree_0_9 (.50)' (firmware/parameters.h:98:0)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'tree_0_10 (.49)' (firmware/parameters.h:106:0)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'tree_0_11 (.48)' (firmware/parameters.h:114:0)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'tree_0_12 (.47)' (firmware/parameters.h:122:0)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'tree_0_13 (.46)' (firmware/parameters.h:130:0)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'tree_0_14 (.45)' (firmware/parameters.h:138:0)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'tree_0_15 (.44)' (firmware/parameters.h:146:0)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'tree_0_16 (.43)' (firmware/parameters.h:154:0)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'tree_0_17 (.42)' (firmware/parameters.h:162:0)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'tree_0_18 (.41)' (firmware/parameters.h:170:0)
+Resolution: For help on HLS 214-210 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_152_1' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:152:23)
+INFO: [HLS 214-291] Loop 'Reduce' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:145:5)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_119_1' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:119:23)
+INFO: [HLS 214-291] Loop 'Activate' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:97:15)
+INFO: [HLS 214-291] Loop 'Compare' is marked as complete unroll implied by the pipeline pragma (firmware/BDT.h:84:11)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_152_1' (firmware/BDT.h:152:23) in function 'BDT::BDT<19, 2, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:138:0)
+INFO: [HLS 214-186] Unrolling loop 'Reduce' (firmware/BDT.h:145:5) in function 'BDT::BDT<19, 2, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function' completely with a factor of 1 (firmware/BDT.h:138:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree<18, 17, 9, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 9 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree<18, 17, 9, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 17 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree<18, 17, 9, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 17 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree<17, 23, 12, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 12 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree<17, 23, 12, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 23 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree<17, 23, 12, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 23 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree<16, 29, 15, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 15 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree<16, 29, 15, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 29 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree<16, 29, 15, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 29 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree<15, 17, 9, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 9 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree<15, 17, 9, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 17 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree<15, 17, 9, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 17 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree<14, 29, 15, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 15 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree<14, 29, 15, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 29 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree<14, 29, 15, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 29 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree<13, 31, 16, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 16 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree<13, 31, 16, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 31 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree<13, 31, 16, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 31 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree<12, 27, 14, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 14 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree<12, 27, 14, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 27 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree<12, 27, 14, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 27 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree<11, 31, 16, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 16 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree<11, 31, 16, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 31 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree<11, 31, 16, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 31 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree<10, 23, 12, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 12 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree<10, 23, 12, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 23 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree<10, 23, 12, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 23 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree<9, 25, 13, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 13 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree<9, 25, 13, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 25 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree<9, 25, 13, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 25 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree<8, 29, 15, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 15 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree<8, 29, 15, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 29 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree<8, 29, 15, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 29 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree<7, 29, 15, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 15 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree<7, 29, 15, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 29 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree<7, 29, 15, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 29 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree<6, 31, 16, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 16 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree<6, 31, 16, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 31 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree<6, 31, 16, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 31 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree<5, 31, 16, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 16 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree<5, 31, 16, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 31 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree<5, 31, 16, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 31 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree<4, 29, 15, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 15 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree<4, 29, 15, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 29 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree<4, 29, 15, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 29 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree<3, 31, 16, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 16 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree<3, 31, 16, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 31 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree<3, 31, 16, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 31 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree<2, 31, 16, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 16 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree<2, 31, 16, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 31 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree<2, 31, 16, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 31 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree<1, 31, 16, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 16 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree<1, 31, 16, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 31 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree<1, 31, 16, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 31 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_119_1' (firmware/BDT.h:119:23) in function 'BDT::Tree<0, 31, 16, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 16 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Activate' (firmware/BDT.h:97:15) in function 'BDT::Tree<0, 31, 16, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 31 (firmware/BDT.h:56:0)
+INFO: [HLS 214-186] Unrolling loop 'Compare' (firmware/BDT.h:84:11) in function 'BDT::Tree<0, 31, 16, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >' completely with a factor of 31 (firmware/BDT.h:56:0)
+INFO: [HLS 214-178] Inlining function '$_0::operator()(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*) const' into '$_0::__invoke(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*) (.193)' (firmware/BDT.cpp:4:0)
+INFO: [HLS 214-178] Inlining function '$_0::operator()(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*) const (.120.225)' into '$_0::__invoke(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)' (firmware/BDT.cpp:4:0)
+INFO: [HLS 214-178] Inlining function '$_0::__invoke(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)' into 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::Tree<0, 31, 16, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, bool (*)(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)) const' (firmware/BDT.h:56:0)
+INFO: [HLS 214-178] Inlining function '$_0::__invoke(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)' into 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::Tree<1, 31, 16, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, bool (*)(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)) const' (firmware/BDT.h:56:0)
+INFO: [HLS 214-178] Inlining function '$_0::__invoke(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)' into 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::Tree<2, 31, 16, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, bool (*)(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)) const' (firmware/BDT.h:56:0)
+INFO: [HLS 214-178] Inlining function '$_0::__invoke(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)' into 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::Tree<3, 31, 16, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, bool (*)(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)) const' (firmware/BDT.h:56:0)
+INFO: [HLS 214-178] Inlining function '$_0::__invoke(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)' into 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::Tree<4, 29, 15, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, bool (*)(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)) const' (firmware/BDT.h:56:0)
+INFO: [HLS 214-178] Inlining function '$_0::__invoke(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)' into 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::Tree<5, 31, 16, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, bool (*)(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)) const' (firmware/BDT.h:56:0)
+INFO: [HLS 214-178] Inlining function '$_0::__invoke(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)' into 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::Tree<6, 31, 16, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, bool (*)(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)) const' (firmware/BDT.h:56:0)
+INFO: [HLS 214-178] Inlining function '$_0::__invoke(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)' into 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::Tree<7, 29, 15, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, bool (*)(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)) const' (firmware/BDT.h:56:0)
+INFO: [HLS 214-178] Inlining function '$_0::__invoke(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)' into 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::Tree<8, 29, 15, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, bool (*)(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)) const' (firmware/BDT.h:56:0)
+INFO: [HLS 214-178] Inlining function '$_0::__invoke(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)' into 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::Tree<9, 25, 13, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, bool (*)(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)) const' (firmware/BDT.h:56:0)
+INFO: [HLS 214-178] Inlining function '$_0::__invoke(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)' into 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::Tree<10, 23, 12, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, bool (*)(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)) const' (firmware/BDT.h:56:0)
+INFO: [HLS 214-178] Inlining function '$_0::__invoke(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)' into 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::Tree<11, 31, 16, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, bool (*)(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)) const' (firmware/BDT.h:56:0)
+INFO: [HLS 214-178] Inlining function '$_0::__invoke(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)' into 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::Tree<12, 27, 14, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, bool (*)(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)) const' (firmware/BDT.h:56:0)
+INFO: [HLS 214-178] Inlining function '$_0::__invoke(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)' into 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::Tree<13, 31, 16, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, bool (*)(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)) const' (firmware/BDT.h:56:0)
+INFO: [HLS 214-178] Inlining function '$_0::__invoke(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)' into 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::Tree<14, 29, 15, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, bool (*)(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)) const' (firmware/BDT.h:56:0)
+INFO: [HLS 214-178] Inlining function '$_0::__invoke(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)' into 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::Tree<15, 17, 9, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, bool (*)(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)) const' (firmware/BDT.h:56:0)
+INFO: [HLS 214-178] Inlining function '$_0::__invoke(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)' into 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::Tree<16, 29, 15, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, bool (*)(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)) const' (firmware/BDT.h:56:0)
+INFO: [HLS 214-178] Inlining function '$_0::__invoke(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)' into 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::Tree<17, 23, 12, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, bool (*)(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)) const' (firmware/BDT.h:56:0)
+INFO: [HLS 214-178] Inlining function '$_0::__invoke(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)' into 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::Tree<18, 17, 9, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, bool (*)(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*)) const' (firmware/BDT.h:56:0)
+INFO: [HLS 214-178] Inlining function 'BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator()(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>) (.41.50)' into 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::reduce<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 2, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >) (.75)' (firmware/BDT.h:22:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::reduce<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 2, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >) (.75)' into 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::reduce<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >) (.82)' (firmware/BDT.h:22:0)
+INFO: [HLS 214-178] Inlining function 'BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator()(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>) (.41.50)' into 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::reduce<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >) (.82)' (firmware/BDT.h:22:0)
+INFO: [HLS 214-178] Inlining function 'BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator()(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>) (.41.50)' into 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::reduce<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 8, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >)' (firmware/BDT.h:22:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::reduce<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 8, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >)' into 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::reduce<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >)' (firmware/BDT.h:22:0)
+INFO: [HLS 214-178] Inlining function 'BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator()(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>) (.41.50)' into 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::reduce<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >)' (firmware/BDT.h:22:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::reduce<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 2, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >) (.75)' into 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::reduce<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 3, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >)' (firmware/BDT.h:22:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::reduce<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 1, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >)' into 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::reduce<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 3, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >)' (firmware/BDT.h:22:0)
+INFO: [HLS 214-178] Inlining function 'BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator()(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>) (.41.50)' into 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::reduce<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 3, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >)' (firmware/BDT.h:22:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::reduce<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 16, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >)' into 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::reduce<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 19, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >)' (firmware/BDT.h:22:0)
+INFO: [HLS 214-178] Inlining function 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::reduce<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 3, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >)' into 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::reduce<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 19, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >)' (firmware/BDT.h:22:0)
+INFO: [HLS 214-178] Inlining function 'BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::operator()(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>) (.41.50)' into 'ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> BDT::reduce<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 19, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> > >(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >)' (firmware/BDT.h:22:0)
+INFO: [HLS 214-178] Inlining function 'BDT::BDT<19, 2, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*) const' into 'my_prj(ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (firmware/my_prj.cpp:5:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_18.41.parent': Complete partitioning on dimension 1. (firmware/parameters.h:170:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_18.41.children_right': Complete partitioning on dimension 1. (firmware/parameters.h:170:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_18.41.children_left': Complete partitioning on dimension 1. (firmware/parameters.h:170:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_18.41.value': Complete partitioning on dimension 1. (firmware/parameters.h:170:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_18.41.threshold': Complete partitioning on dimension 1. (firmware/parameters.h:170:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_18.41.feature': Complete partitioning on dimension 1. (firmware/parameters.h:170:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_17.42.parent': Complete partitioning on dimension 1. (firmware/parameters.h:162:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_17.42.children_right': Complete partitioning on dimension 1. (firmware/parameters.h:162:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_17.42.children_left': Complete partitioning on dimension 1. (firmware/parameters.h:162:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_17.42.value': Complete partitioning on dimension 1. (firmware/parameters.h:162:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_17.42.threshold': Complete partitioning on dimension 1. (firmware/parameters.h:162:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_17.42.feature': Complete partitioning on dimension 1. (firmware/parameters.h:162:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_16.43.parent': Complete partitioning on dimension 1. (firmware/parameters.h:154:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_16.43.children_right': Complete partitioning on dimension 1. (firmware/parameters.h:154:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_16.43.children_left': Complete partitioning on dimension 1. (firmware/parameters.h:154:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_16.43.value': Complete partitioning on dimension 1. (firmware/parameters.h:154:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_16.43.threshold': Complete partitioning on dimension 1. (firmware/parameters.h:154:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_16.43.feature': Complete partitioning on dimension 1. (firmware/parameters.h:154:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_15.44.parent': Complete partitioning on dimension 1. (firmware/parameters.h:146:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_15.44.children_right': Complete partitioning on dimension 1. (firmware/parameters.h:146:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_15.44.children_left': Complete partitioning on dimension 1. (firmware/parameters.h:146:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_15.44.value': Complete partitioning on dimension 1. (firmware/parameters.h:146:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_15.44.threshold': Complete partitioning on dimension 1. (firmware/parameters.h:146:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_15.44.feature': Complete partitioning on dimension 1. (firmware/parameters.h:146:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_14.45.parent': Complete partitioning on dimension 1. (firmware/parameters.h:138:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_14.45.children_right': Complete partitioning on dimension 1. (firmware/parameters.h:138:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_14.45.children_left': Complete partitioning on dimension 1. (firmware/parameters.h:138:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_14.45.value': Complete partitioning on dimension 1. (firmware/parameters.h:138:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_14.45.threshold': Complete partitioning on dimension 1. (firmware/parameters.h:138:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_14.45.feature': Complete partitioning on dimension 1. (firmware/parameters.h:138:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_13.46.parent': Complete partitioning on dimension 1. (firmware/parameters.h:130:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_13.46.children_right': Complete partitioning on dimension 1. (firmware/parameters.h:130:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_13.46.children_left': Complete partitioning on dimension 1. (firmware/parameters.h:130:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_13.46.value': Complete partitioning on dimension 1. (firmware/parameters.h:130:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_13.46.threshold': Complete partitioning on dimension 1. (firmware/parameters.h:130:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_13.46.feature': Complete partitioning on dimension 1. (firmware/parameters.h:130:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_12.47.parent': Complete partitioning on dimension 1. (firmware/parameters.h:122:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_12.47.children_right': Complete partitioning on dimension 1. (firmware/parameters.h:122:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_12.47.children_left': Complete partitioning on dimension 1. (firmware/parameters.h:122:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_12.47.value': Complete partitioning on dimension 1. (firmware/parameters.h:122:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_12.47.threshold': Complete partitioning on dimension 1. (firmware/parameters.h:122:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_12.47.feature': Complete partitioning on dimension 1. (firmware/parameters.h:122:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_11.48.parent': Complete partitioning on dimension 1. (firmware/parameters.h:114:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_11.48.children_right': Complete partitioning on dimension 1. (firmware/parameters.h:114:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_11.48.children_left': Complete partitioning on dimension 1. (firmware/parameters.h:114:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_11.48.value': Complete partitioning on dimension 1. (firmware/parameters.h:114:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_11.48.threshold': Complete partitioning on dimension 1. (firmware/parameters.h:114:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_11.48.feature': Complete partitioning on dimension 1. (firmware/parameters.h:114:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_10.49.parent': Complete partitioning on dimension 1. (firmware/parameters.h:106:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_10.49.children_right': Complete partitioning on dimension 1. (firmware/parameters.h:106:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_10.49.children_left': Complete partitioning on dimension 1. (firmware/parameters.h:106:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_10.49.value': Complete partitioning on dimension 1. (firmware/parameters.h:106:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_10.49.threshold': Complete partitioning on dimension 1. (firmware/parameters.h:106:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9tree_0_10.49.feature': Complete partitioning on dimension 1. (firmware/parameters.h:106:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_9.50.parent': Complete partitioning on dimension 1. (firmware/parameters.h:98:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_9.50.children_right': Complete partitioning on dimension 1. (firmware/parameters.h:98:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_9.50.children_left': Complete partitioning on dimension 1. (firmware/parameters.h:98:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_9.50.value': Complete partitioning on dimension 1. (firmware/parameters.h:98:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_9.50.threshold': Complete partitioning on dimension 1. (firmware/parameters.h:98:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_9.50.feature': Complete partitioning on dimension 1. (firmware/parameters.h:98:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_8.51.parent': Complete partitioning on dimension 1. (firmware/parameters.h:90:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_8.51.children_right': Complete partitioning on dimension 1. (firmware/parameters.h:90:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_8.51.children_left': Complete partitioning on dimension 1. (firmware/parameters.h:90:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_8.51.value': Complete partitioning on dimension 1. (firmware/parameters.h:90:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_8.51.threshold': Complete partitioning on dimension 1. (firmware/parameters.h:90:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_8.51.feature': Complete partitioning on dimension 1. (firmware/parameters.h:90:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_7.52.parent': Complete partitioning on dimension 1. (firmware/parameters.h:82:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_7.52.children_right': Complete partitioning on dimension 1. (firmware/parameters.h:82:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_7.52.children_left': Complete partitioning on dimension 1. (firmware/parameters.h:82:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_7.52.value': Complete partitioning on dimension 1. (firmware/parameters.h:82:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_7.52.threshold': Complete partitioning on dimension 1. (firmware/parameters.h:82:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_7.52.feature': Complete partitioning on dimension 1. (firmware/parameters.h:82:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_6.53.parent': Complete partitioning on dimension 1. (firmware/parameters.h:74:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_6.53.children_right': Complete partitioning on dimension 1. (firmware/parameters.h:74:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_6.53.children_left': Complete partitioning on dimension 1. (firmware/parameters.h:74:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_6.53.value': Complete partitioning on dimension 1. (firmware/parameters.h:74:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_6.53.threshold': Complete partitioning on dimension 1. (firmware/parameters.h:74:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_6.53.feature': Complete partitioning on dimension 1. (firmware/parameters.h:74:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_5.54.parent': Complete partitioning on dimension 1. (firmware/parameters.h:66:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_5.54.children_right': Complete partitioning on dimension 1. (firmware/parameters.h:66:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_5.54.children_left': Complete partitioning on dimension 1. (firmware/parameters.h:66:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_5.54.value': Complete partitioning on dimension 1. (firmware/parameters.h:66:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_5.54.threshold': Complete partitioning on dimension 1. (firmware/parameters.h:66:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_5.54.feature': Complete partitioning on dimension 1. (firmware/parameters.h:66:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_4.55.parent': Complete partitioning on dimension 1. (firmware/parameters.h:58:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_4.55.children_right': Complete partitioning on dimension 1. (firmware/parameters.h:58:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_4.55.children_left': Complete partitioning on dimension 1. (firmware/parameters.h:58:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_4.55.value': Complete partitioning on dimension 1. (firmware/parameters.h:58:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_4.55.threshold': Complete partitioning on dimension 1. (firmware/parameters.h:58:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_4.55.feature': Complete partitioning on dimension 1. (firmware/parameters.h:58:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_3.56.parent': Complete partitioning on dimension 1. (firmware/parameters.h:50:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_3.56.children_right': Complete partitioning on dimension 1. (firmware/parameters.h:50:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_3.56.children_left': Complete partitioning on dimension 1. (firmware/parameters.h:50:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_3.56.value': Complete partitioning on dimension 1. (firmware/parameters.h:50:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_3.56.threshold': Complete partitioning on dimension 1. (firmware/parameters.h:50:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_3.56.feature': Complete partitioning on dimension 1. (firmware/parameters.h:50:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_2.57.parent': Complete partitioning on dimension 1. (firmware/parameters.h:42:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_2.57.children_right': Complete partitioning on dimension 1. (firmware/parameters.h:42:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_2.57.children_left': Complete partitioning on dimension 1. (firmware/parameters.h:42:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_2.57.value': Complete partitioning on dimension 1. (firmware/parameters.h:42:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_2.57.threshold': Complete partitioning on dimension 1. (firmware/parameters.h:42:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_2.57.feature': Complete partitioning on dimension 1. (firmware/parameters.h:42:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_1.58.parent': Complete partitioning on dimension 1. (firmware/parameters.h:34:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_1.58.children_right': Complete partitioning on dimension 1. (firmware/parameters.h:34:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_1.58.children_left': Complete partitioning on dimension 1. (firmware/parameters.h:34:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_1.58.value': Complete partitioning on dimension 1. (firmware/parameters.h:34:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_1.58.threshold': Complete partitioning on dimension 1. (firmware/parameters.h:34:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_1.58.feature': Complete partitioning on dimension 1. (firmware/parameters.h:34:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_0.59.parent': Complete partitioning on dimension 1. (firmware/parameters.h:26:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_0.59.children_right': Complete partitioning on dimension 1. (firmware/parameters.h:26:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_0.59.children_left': Complete partitioning on dimension 1. (firmware/parameters.h:26:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_0.59.value': Complete partitioning on dimension 1. (firmware/parameters.h:26:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_0.59.threshold': Complete partitioning on dimension 1. (firmware/parameters.h:26:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8tree_0_0.59.feature': Complete partitioning on dimension 1. (firmware/parameters.h:26:0)
+INFO: [HLS 214-248] Applying array_partition to 'value_leaf': Complete partitioning on dimension 1. (firmware/BDT.h:76:13)
+INFO: [HLS 214-248] Applying array_partition to 'scores.i': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (firmware/BDT.h:139:13)
+INFO: [HLS 214-248] Applying array_partition to 'x': Complete partitioning on dimension 1. (firmware/my_prj.cpp:5:0)
+INFO: [HLS 214-248] Applying array_partition to 'score': Complete partitioning on dimension 1. (firmware/my_prj.cpp:5:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 7.22 seconds. CPU system time: 1.22 seconds. Elapsed time: 11.18 seconds; current allocated memory: 266.891 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 266.891 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.06 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.08 seconds; current allocated memory: 269.293 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'BDT::reduce<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> > >' into 'BDT::reduce<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 19, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> > >' (firmware/BDT.h:31->firmware/BDT.h:31->firmware/BDT.h:31) automatically.
+INFO: [XFORM 203-602] Inlining function 'BDT::BDT<19, 2, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::tree_scores' into 'my_prj' (firmware/BDT.h:142->firmware/my_prj.cpp:10) automatically.
+INFO: [XFORM 203-602] Inlining function 'BDT::reduce<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 19, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> > >' into 'my_prj' (firmware/BDT.h:149->firmware/my_prj.cpp:10) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 271.992 MB.
+INFO: [XFORM 203-602] Inlining function 'BDT::reduce<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> > >' into 'BDT::reduce<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 19, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> > >' (firmware/BDT.h:31->firmware/BDT.h:31->firmware/BDT.h:31) automatically.
+INFO: [XFORM 203-602] Inlining function 'BDT::BDT<19, 2, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::tree_scores' into 'my_prj' (firmware/BDT.h:142->firmware/my_prj.cpp:10) automatically.
+INFO: [XFORM 203-602] Inlining function 'BDT::reduce<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 19, BDT::OpAdd<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> > >' into 'my_prj' (firmware/BDT.h:149->firmware/my_prj.cpp:10) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (firmware/BDT.cpp:4:214) to (firmware/BDT.h:125:3) in function 'BDT::Tree<9, 25, 13, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (firmware/BDT.cpp:4:214) to (firmware/BDT.h:125:3) in function 'BDT::Tree<4, 29, 15, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (firmware/BDT.cpp:4:214) to (firmware/BDT.h:125:3) in function 'BDT::Tree<3, 31, 16, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (firmware/BDT.cpp:4:214) to (firmware/BDT.h:125:3) in function 'BDT::Tree<15, 17, 9, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (firmware/BDT.cpp:4:214) to (firmware/BDT.h:125:3) in function 'BDT::Tree<12, 27, 14, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (firmware/BDT.cpp:4:214) to (firmware/BDT.h:125:3) in function 'BDT::Tree<10, 23, 12, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> [10], ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >::decision_function<ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<18, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >'... converting 3 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'my_prj' (firmware/my_prj.cpp:5:1)...18 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.39 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.41 seconds; current allocated memory: 300.730 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.17 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.23 seconds; current allocated memory: 482.551 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'my_prj' ...
+WARNING: [SYN 201-103] Legalizing function name 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.18' to 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_18'.
+WARNING: [SYN 201-103] Legalizing function name 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.17' to 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_17'.
+WARNING: [SYN 201-103] Legalizing function name 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.7' to 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_7'.
+WARNING: [SYN 201-103] Legalizing function name 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.6' to 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_6'.
+WARNING: [SYN 201-103] Legalizing function name 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.5' to 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_5'.
+WARNING: [SYN 201-103] Legalizing function name 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.4' to 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_4'.
+WARNING: [SYN 201-103] Legalizing function name 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.3' to 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_3'.
+WARNING: [SYN 201-103] Legalizing function name 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.2' to 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_2'.
+WARNING: [SYN 201-103] Legalizing function name 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.1' to 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_1'.
+WARNING: [SYN 201-103] Legalizing function name 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >' to 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_s'.
+WARNING: [SYN 201-103] Legalizing function name 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.16' to 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_16'.
+WARNING: [SYN 201-103] Legalizing function name 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.15' to 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_15'.
+WARNING: [SYN 201-103] Legalizing function name 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.14' to 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_14'.
+WARNING: [SYN 201-103] Legalizing function name 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.13' to 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_13'.
+WARNING: [SYN 201-103] Legalizing function name 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.12' to 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_12'.
+WARNING: [SYN 201-103] Legalizing function name 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.11' to 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_11'.
+WARNING: [SYN 201-103] Legalizing function name 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.10' to 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_10'.
+WARNING: [SYN 201-103] Legalizing function name 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.9' to 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_9'.
+WARNING: [SYN 201-103] Legalizing function name 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.8' to 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_8'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_18' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.18'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.18'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.12 seconds. CPU system time: 0.06 seconds. Elapsed time: 0.18 seconds; current allocated memory: 484.941 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 484.941 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_17' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.17'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.17'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 486.160 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 486.160 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.7'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.7'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 487.422 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 487.422 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.6'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 488.691 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 488.691 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.5'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 489.746 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 489.891 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 490.965 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 491.023 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 492.273 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 492.297 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 4, function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 493.246 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 493.461 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 494.406 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 494.613 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 495.480 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 495.637 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_16' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.16'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 4, function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.16'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 496.645 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 496.656 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_15' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.15'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.15'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 497.586 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 497.797 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_14' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.14'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.14'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 498.711 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 498.969 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_13' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.13'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.13'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 499.855 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 500.211 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_12' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.12'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 5, function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.12'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 501.145 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 501.336 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_11' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.11'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 4, function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.11'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 502.082 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 502.230 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.10'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 4, function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.10'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 503.168 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 503.402 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.9'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 4, function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.9'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 504.145 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 504.406 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.8'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 4, function 'decision_function<ap_fixed<18, 8, 5, 3, 0>, ap_fixed<18, 8, 5, 3, 0> >.8'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 505.055 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 505.098 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'my_prj' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'my_prj'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 9, function 'my_prj'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 506.426 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 506.582 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_18' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_33_4_12_1_0': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_18'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 507.492 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_17' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] RTL name 'sparsemux_33_4_12_1_0' is changed to 'sparsemux_33_4_12_1_0_x' due to conflict.
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_33_4_12_1_0_x': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_17'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 510.336 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_33_4_11_1_0': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_7'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 513.102 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_6' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] RTL name 'sparsemux_33_4_11_1_0' is changed to 'sparsemux_33_4_11_1_0_x' due to conflict.
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_33_4_11_1_0_x': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_6'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 515.867 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_31_4_12_1_0': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 518.648 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] RTL name 'sparsemux_33_4_11_1_0' is changed to 'sparsemux_33_4_11_1_0_x0' due to conflict.
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_33_4_11_1_0_x0': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 521.461 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] RTL name 'sparsemux_33_4_11_1_0' is changed to 'sparsemux_33_4_11_1_0_x1' due to conflict.
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_33_4_11_1_0_x1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 524.207 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_31_4_11_1_0': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 526.938 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] RTL name 'sparsemux_31_4_11_1_0' is changed to 'sparsemux_31_4_11_1_0_x' due to conflict.
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_31_4_11_1_0_x': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 529.621 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_27_4_11_1_0': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 532.219 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_16' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_25_4_11_1_0': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_16'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 534.980 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_15' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] RTL name 'sparsemux_33_4_11_1_0' is changed to 'sparsemux_33_4_11_1_0_x2' due to conflict.
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_33_4_11_1_0_x2': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_15'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 537.789 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_14' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_29_4_11_1_0': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_14'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.11 seconds; current allocated memory: 540.559 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_13' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] RTL name 'sparsemux_33_4_11_1_0' is changed to 'sparsemux_33_4_11_1_0_x3' due to conflict.
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_33_4_11_1_0_x3': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_13'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 544.062 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_12' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] RTL name 'sparsemux_31_4_11_1_0' is changed to 'sparsemux_31_4_11_1_0_x0' due to conflict.
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_31_4_11_1_0_x0': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_12'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.12 seconds; current allocated memory: 547.246 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_11' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_19_4_11_1_0': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_11'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 550.547 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] RTL name 'sparsemux_31_4_11_1_0' is changed to 'sparsemux_31_4_11_1_0_x1' due to conflict.
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_31_4_11_1_0_x1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_10'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 553.449 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] RTL name 'sparsemux_25_4_11_1_0' is changed to 'sparsemux_25_4_11_1_0_x' due to conflict.
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_25_4_11_1_0_x': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_9'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 555.957 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] RTL name 'sparsemux_19_4_11_1_0' is changed to 'sparsemux_19_4_11_1_0_x' due to conflict.
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_19_4_11_1_0_x': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_8'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.11 seconds; current allocated memory: 558.980 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'my_prj' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/x_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/x_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/x_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/x_3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/x_4' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/x_5' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/x_6' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/x_7' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/x_8' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/x_9' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/score_0' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'my_prj/score_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'my_prj' to 'ap_ctrl_hs'.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'my_prj' pipeline 'my_prj' pipeline type 'function pipeline'
+WARNING: [RTGEN 206-101] Port 'my_prj/score_1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'my_prj'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.19 seconds. CPU system time: 0 seconds. Elapsed time: 0.19 seconds; current allocated memory: 561.422 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.33 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.36 seconds; current allocated memory: 562.301 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.58 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.61 seconds; current allocated memory: 565.559 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for my_prj.
+INFO: [VLOG 209-307] Generating Verilog RTL for my_prj.
+INFO: [HLS 200-789] **** Estimated Fmax: 276.93 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 22.13 seconds. CPU system time: 3.81 seconds. Elapsed time: 29.36 seconds; current allocated memory: 310.613 MB.
+INFO: [HLS 200-112] Total CPU user time: 24.04 seconds. Total CPU system time: 4.36 seconds. Total elapsed time: 31.94 seconds; peak allocated memory: 567.711 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Fri Sep 19 13:38:26 2025...

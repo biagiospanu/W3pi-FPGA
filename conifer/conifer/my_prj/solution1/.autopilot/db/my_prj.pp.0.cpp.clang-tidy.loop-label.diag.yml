@@ -1,0 +1,94 @@
+---
+MainSourceFile:  /home/bspanu/hackathon/conifer/conifer/my_prj/solution1/.autopilot/db/my_prj.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1207_1:  '
+    FileOffset:      1207
+    FilePath:        /opt/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_base.h
+    Replacements:    
+      - FilePath:        /home/bspanu/hackathon/conifer/conifer/my_prj/solution1/.autopilot/db/my_prj.pp.0.cpp
+        Offset:          56055
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1207_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        /opt/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/bspanu/hackathon/conifer/conifer/my_prj/solution1/.autopilot/db/my_prj.pp.0.cpp
+        Offset:          283995
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        /opt/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/bspanu/hackathon/conifer/conifer/my_prj/solution1/.autopilot/db/my_prj.pp.0.cpp
+        Offset:          284463
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        /opt/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/bspanu/hackathon/conifer/conifer/my_prj/solution1/.autopilot/db/my_prj.pp.0.cpp
+        Offset:          284932
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1247_1:  '
+    FileOffset:      1247
+    FilePath:        /opt/tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h
+    Replacements:    
+      - FilePath:        /home/bspanu/hackathon/conifer/conifer/my_prj/solution1/.autopilot/db/my_prj.pp.0.cpp
+        Offset:          568596
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1247_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_119_1:  '
+    FileOffset:      119
+    FilePath:        /home/bspanu/hackathon/conifer/conifer/firmware/BDT.h
+    Replacements:    
+      - FilePath:        /home/bspanu/hackathon/conifer/conifer/my_prj/solution1/.autopilot/db/my_prj.pp.0.cpp
+        Offset:          1582797
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_119_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_152_1:  '
+    FileOffset:      152
+    FilePath:        /home/bspanu/hackathon/conifer/conifer/firmware/BDT.h
+    Replacements:    
+      - FilePath:        /home/bspanu/hackathon/conifer/conifer/my_prj/solution1/.autopilot/db/my_prj.pp.0.cpp
+        Offset:          1583619
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_152_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_14_1:  '
+    FileOffset:      14
+    FilePath:        /home/bspanu/hackathon/conifer/conifer/firmware/my_prj.cpp
+    Replacements:    
+      - FilePath:        /home/bspanu/hackathon/conifer/conifer/my_prj/solution1/.autopilot/db/my_prj.pp.0.cpp
+        Offset:          1602322
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_14_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_20_1:  '
+    FileOffset:      20
+    FilePath:        /home/bspanu/hackathon/conifer/conifer/firmware/my_prj.cpp
+    Replacements:    
+      - FilePath:        /home/bspanu/hackathon/conifer/conifer/my_prj/solution1/.autopilot/db/my_prj.pp.0.cpp
+        Offset:          1602488
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_20_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_36_1:  '
+    FileOffset:      36
+    FilePath:        /home/bspanu/hackathon/conifer/conifer/firmware/my_prj.cpp
+    Replacements:    
+      - FilePath:        /home/bspanu/hackathon/conifer/conifer/my_prj/solution1/.autopilot/db/my_prj.pp.0.cpp
+        Offset:          1603471
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_36_1: '
+...

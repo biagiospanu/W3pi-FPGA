@@ -1,0 +1,10 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="conifer_xgboost_moons_accelerator" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="conifer_xgboost_moons_accelerator"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

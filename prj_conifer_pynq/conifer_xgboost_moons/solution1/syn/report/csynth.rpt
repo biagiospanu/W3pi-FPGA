@@ -1,0 +1,285 @@
+
+
+================================================================
+== Synthesis Summary Report of 'conifer_xgboost_moons_accelerator'
+================================================================
++ General Information: 
+    * Date:           Fri Sep 19 13:40:03 2025
+    * Version:        2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:        conifer_xgboost_moons
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------------------------------------------------------------+--------+-------+---------+---------+----------+---------+------+----------+--------+----+-------------+-------------+-----+
+    |                              Modules                             |  Issue |       | Latency | Latency | Iteration|         | Trip |          |        |    |             |             |     |
+    |                              & Loops                             |  Type  | Slack | (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined|  BRAM  | DSP|      FF     |     LUT     | URAM|
+    +------------------------------------------------------------------+--------+-------+---------+---------+----------+---------+------+----------+--------+----+-------------+-------------+-----+
+    |+ conifer_xgboost_moons_accelerator                               |  Timing|  -0.20|        -|        -|         -|        -|     -|        no|  4 (1%)|   -|  24495 (23%)|  25547 (48%)|    -|
+    | o VITIS_LOOP_36_1                                                |      II|   3.65|        -|        -|        58|       56|     -|       yes|       -|   -|            -|            -|    -|
+    |  + copy_input                                                    |  Timing|  -0.20|       33|  165.000|         -|       10|     -|       yes|       -|   -|  11355 (10%)|   9204 (17%)|    -|
+    |  + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_4   |       -|   0.58|        4|   20.000|         -|        1|     -|       yes|       -|   -|    688 (~0%)|     839 (1%)|    -|
+    |  + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_15  |       -|   0.58|        4|   20.000|         -|        1|     -|       yes|       -|   -|    724 (~0%)|     839 (1%)|    -|
+    |  + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_18  |       -|   0.58|        4|   20.000|         -|        1|     -|       yes|       -|   -|    689 (~0%)|     839 (1%)|    -|
+    |  + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_17  |       -|   0.58|        4|   20.000|         -|        1|     -|       yes|       -|   -|    707 (~0%)|     839 (1%)|    -|
+    |  + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_7   |       -|   0.58|        4|   20.000|         -|        1|     -|       yes|       -|   -|    688 (~0%)|     839 (1%)|    -|
+    |  + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_6   |       -|   0.54|        4|   20.000|         -|        1|     -|       yes|       -|   -|    484 (~0%)|     756 (1%)|    -|
+    |  + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_5   |       -|   0.54|        4|   20.000|         -|        1|     -|       yes|       -|   -|    645 (~0%)|     783 (1%)|    -|
+    |  + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_3   |       -|   0.58|        4|   20.000|         -|        1|     -|       yes|       -|   -|    688 (~0%)|     828 (1%)|    -|
+    |  + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_2   |       -|   0.38|        3|   15.000|         -|        1|     -|       yes|       -|   -|    349 (~0%)|     639 (1%)|    -|
+    |  + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_1   |       -|   0.58|        4|   20.000|         -|        1|     -|       yes|       -|   -|    705 (~0%)|     810 (1%)|    -|
+    |  + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_s   |       -|   0.07|        4|   20.000|         -|        1|     -|       yes|       -|   -|    622 (~0%)|     719 (1%)|    -|
+    |  + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_16  |       -|   0.54|        3|   15.000|         -|        1|     -|       yes|       -|   -|    233 (~0%)|    496 (~0%)|    -|
+    |  + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_14  |       -|   0.58|        4|   20.000|         -|        1|     -|       yes|       -|   -|    558 (~0%)|     728 (1%)|    -|
+    |  + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_13  |       -|   0.58|        4|   20.000|         -|        1|     -|       yes|       -|   -|    706 (~0%)|     839 (1%)|    -|
+    |  + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_12  |       -|   0.58|        4|   20.000|         -|        1|     -|       yes|       -|   -|    671 (~0%)|     814 (1%)|    -|
+    |  + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_11  |       -|   0.25|        3|   15.000|         -|        1|     -|       yes|       -|   -|    205 (~0%)|    378 (~0%)|    -|
+    |  + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_10  |       -|   0.38|        3|   15.000|         -|        1|     -|       yes|       -|   -|    386 (~0%)|     652 (1%)|    -|
+    |  + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_9   |       -|   0.54|        3|   15.000|         -|        1|     -|       yes|       -|   -|    295 (~0%)|    515 (~0%)|    -|
+    |  + decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_8   |       -|   0.54|        3|   15.000|         -|        1|     -|       yes|       -|   -|    272 (~0%)|    391 (~0%)|    -|
+    +------------------------------------------------------------------+--------+-------+---------+---------+----------+---------+------+----------+--------+----+-------------+-------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++-------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| Interface   | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   | Resource Estimate |
+|             | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |                   |
++-------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| m_axi_gmem0 | 32 -> 32   | 32            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          | BRAM=4            |
++-------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 7             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control | N        | 0x10   | 32    | W      | Data signal of N                 |                                                                      |
+| s_axi_control | n_f      | 0x18   | 32    | R      | Data signal of n_f               |                                                                      |
+| s_axi_control | n_f_ctrl | 0x1c   | 32    | R      | Control signal of n_f            | 0=n_f_ap_vld                                                         |
+| s_axi_control | n_c      | 0x28   | 32    | R      | Data signal of n_c               |                                                                      |
+| s_axi_control | n_c_ctrl | 0x2c   | 32    | R      | Control signal of n_c            | 0=n_c_ap_vld                                                         |
+| s_axi_control | x        | 0x38   | 32    | W      | Data signal of x                 |                                                                      |
+| s_axi_control | score    | 0x40   | 32    | W      | Data signal of score             |                                                                      |
++---------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------+
+| Argument | Direction | Datatype |
++----------+-----------+----------+
+| N        | in        | int      |
+| n_f      | out       | int&     |
+| n_c      | out       | int&     |
+| x        | inout     | float*   |
+| score    | inout     | float*   |
++----------+-----------+----------+
+
+* SW-to-HW Mapping
++----------+---------------+-----------+----------+------------------------------------+
+| Argument | HW Interface  | HW Type   | HW Usage | HW Info                            |
++----------+---------------+-----------+----------+------------------------------------+
+| N        | s_axi_control | register  |          | name=N offset=0x10 range=32        |
+| n_f      | s_axi_control | register  |          | name=n_f offset=0x18 range=32      |
+| n_f      | s_axi_control | register  |          | name=n_f_ctrl offset=0x1c range=32 |
+| n_c      | s_axi_control | register  |          | name=n_c offset=0x28 range=32      |
+| n_c      | s_axi_control | register  |          | name=n_c_ctrl offset=0x2c range=32 |
+| x        | m_axi_gmem0   | interface |          |                                    |
+| x        | s_axi_control | register  | offset   | name=x offset=0x38 range=32        |
+| score    | m_axi_gmem0   | interface |          |                                    |
+| score    | s_axi_control | register  | offset   | name=score offset=0x40 range=32    |
++----------+---------------+-----------+----------+------------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+* Inferred Burst Summary
++--------------+-----------+----------+-------+-----------------+------------------------------------------+
+| HW Interface | Direction | Length   | Width | Loop            | Loop Location                            |
++--------------+-----------+----------+-------+-----------------+------------------------------------------+
+| m_axi_gmem0  | read      | 10       | 32    |                 |                                          |
+| m_axi_gmem0  | write     | variable | 32    | VITIS_LOOP_36_1 | firmware/conifer_xgboost_moons.cpp:36:20 |
++--------------+-----------+----------+-------+-----------------+------------------------------------------+
+
+* All M_AXI Variable Accesses
++--------------+----------+------------------------------------------+-----------+--------------+----------+-----------------+------------------------------------------+------------+---------------------------------------------------------------------------------------------------------+
+| HW Interface | Variable | Access Location                          | Direction | Burst Status | Length   | Loop            | Loop Location                            | Resolution | Problem                                                                                                 |
++--------------+----------+------------------------------------------+-----------+--------------+----------+-----------------+------------------------------------------+------------+---------------------------------------------------------------------------------------------------------+
+| m_axi_gmem0  | x_in     | firmware/conifer_xgboost_moons.cpp:15:16 | read      | Widen Fail   |          |                 |                                          | 214-353    | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem0  | x_in     | firmware/conifer_xgboost_moons.cpp:15:16 | read      | Inferred     | 10       |                 |                                          |            |                                                                                                         |
+| m_axi_gmem0  | score    | firmware/conifer_xgboost_moons.cpp:21:49 | write     | Widen Fail   |          | VITIS_LOOP_36_1 | firmware/conifer_xgboost_moons.cpp:36:20 | 214-353    | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem0  | score    | firmware/conifer_xgboost_moons.cpp:21:49 | write     | Inferred     | variable | VITIS_LOOP_36_1 | firmware/conifer_xgboost_moons.cpp:36:20 |            |                                                                                                         |
++--------------+----------+------------------------------------------+-----------+--------------+----------+-----------------+------------------------------------------+------------+---------------------------------------------------------------------------------------------------------+
+
+    * Resolution URL: docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=XXX-YYY.html (replace XXX-YYY with column value)
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------------------+-----+--------+-------------+-----+--------+---------+
+| Name                                | DSP | Pragma | Variable    | Op  | Impl   | Latency |
++-------------------------------------+-----+--------+-------------+-----+--------+---------+
+| + conifer_xgboost_moons_accelerator | 0   |        |             |     |        |         |
+|   add_ln36_fu_524_p2                |     |        | add_ln36    | add | fabric | 0       |
+|   add_ln36_1_fu_695_p2              |     |        | add_ln36_1  | add | fabric | 0       |
+|   add_ln36_2_fu_705_p2              |     |        | add_ln36_2  | add | fabric | 0       |
+|   add_ln36_3_fu_715_p2              |     |        | add_ln36_3  | add | fabric | 0       |
+|   add_ln36_4_fu_721_p2              |     |        | add_ln36_4  | add | fabric | 0       |
+|   add_ln36_5_fu_631_p2              |     |        | add_ln36_5  | add | fabric | 0       |
+|   add_ln36_6_fu_734_p2              |     |        | add_ln36_6  | add | fabric | 0       |
+|   add_ln36_7_fu_740_p2              |     |        | add_ln36_7  | add | fabric | 0       |
+|   add_ln36_8_fu_793_p2              |     |        | add_ln36_8  | add | fabric | 0       |
+|   add_ln36_9_fu_637_p2              |     |        | add_ln36_9  | add | fabric | 0       |
+|   add_ln36_10_fu_643_p2             |     |        | add_ln36_10 | add | fabric | 0       |
+|   add_ln36_11_fu_653_p2             |     |        | add_ln36_11 | add | fabric | 0       |
+|   add_ln36_12_fu_752_p2             |     |        | add_ln36_12 | add | fabric | 0       |
+|   add_ln36_13_fu_758_p2             |     |        | add_ln36_13 | add | fabric | 0       |
+|   add_ln36_14_fu_659_p2             |     |        | add_ln36_14 | add | fabric | 0       |
+|   add_ln36_15_fu_771_p2             |     |        | add_ln36_15 | add | fabric | 0       |
+|   add_ln36_16_fu_781_p2             |     |        | add_ln36_16 | add | fabric | 0       |
+|   add_ln36_17_fu_805_p2             |     |        | add_ln36_17 | add | fabric | 0       |
+|   add_ln36_19_fu_817_p2             |     |        | add_ln36_19 | add | fabric | 0       |
+|   add_ln36_18_fu_821_p2             |     |        | add_ln36_18 | add | fabric | 0       |
+|   sub_ln21_fu_840_p2                |     |        | sub_ln21    | sub | fabric | 0       |
+|   sub_ln21_1_fu_888_p2              |     |        | sub_ln21_1  | sub | fabric | 0       |
+|   add_ln21_fu_898_p2                |     |        | add_ln21    | add | fabric | 0       |
+|   sub_ln21_4_fu_913_p2              |     |        | sub_ln21_4  | sub | fabric | 0       |
+|   add_ln21_1_fu_929_p2              |     |        | add_ln21_1  | add | fabric | 0       |
+|   sub_ln21_2_fu_934_p2              |     |        | sub_ln21_2  | sub | fabric | 0       |
+|   add_ln21_2_fu_1038_p2             |     |        | add_ln21_2  | add | fabric | 0       |
+|   sub_ln21_3_fu_1054_p2             |     |        | sub_ln21_3  | sub | fabric | 0       |
+|   add_ln21_3_fu_1077_p2             |     |        | add_ln21_3  | add | fabric | 0       |
+|  + copy_input                       | 0   |        |             |     |        |         |
+|    add_ln15_1_fu_123_p2             |     |        | add_ln15_1  | add | fabric | 0       |
+|    add_ln15_fu_136_p2               |     |        | add_ln15    | add | fabric | 0       |
+|    sub_ln15_fu_225_p2               |     |        | sub_ln15    | sub | fabric | 0       |
+|    sub_ln15_1_fu_236_p2             |     |        | sub_ln15_1  | sub | fabric | 0       |
+|    add_ln15_2_fu_297_p2             |     |        | add_ln15_2  | add | fabric | 0       |
+|    sub_ln15_2_fu_302_p2             |     |        | sub_ln15_2  | sub | fabric | 0       |
+|    sub_ln15_3_fu_332_p2             |     |        | sub_ln15_3  | sub | fabric | 0       |
+|    sub_ln15_4_fu_343_p2             |     |        | sub_ln15_4  | sub | fabric | 0       |
+|    add_ln15_3_fu_430_p2             |     |        | add_ln15_3  | add | fabric | 0       |
+|    sub_ln15_5_fu_435_p2             |     |        | sub_ln15_5  | sub | fabric | 0       |
+|    sub_ln15_6_fu_465_p2             |     |        | sub_ln15_6  | sub | fabric | 0       |
+|    sub_ln15_7_fu_476_p2             |     |        | sub_ln15_7  | sub | fabric | 0       |
+|    add_ln15_4_fu_563_p2             |     |        | add_ln15_4  | add | fabric | 0       |
+|    sub_ln15_8_fu_568_p2             |     |        | sub_ln15_8  | sub | fabric | 0       |
+|    sub_ln15_9_fu_598_p2             |     |        | sub_ln15_9  | sub | fabric | 0       |
+|    sub_ln15_10_fu_609_p2            |     |        | sub_ln15_10 | sub | fabric | 0       |
+|    add_ln15_5_fu_741_p2             |     |        | add_ln15_5  | add | fabric | 0       |
+|    sub_ln15_11_fu_746_p2            |     |        | sub_ln15_11 | sub | fabric | 0       |
+|    sub_ln15_12_fu_776_p2            |     |        | sub_ln15_12 | sub | fabric | 0       |
+|    sub_ln15_13_fu_787_p2            |     |        | sub_ln15_13 | sub | fabric | 0       |
+|    add_ln15_6_fu_919_p2             |     |        | add_ln15_6  | add | fabric | 0       |
+|    sub_ln15_14_fu_924_p2            |     |        | sub_ln15_14 | sub | fabric | 0       |
+|    sub_ln15_15_fu_954_p2            |     |        | sub_ln15_15 | sub | fabric | 0       |
+|    sub_ln15_16_fu_965_p2            |     |        | sub_ln15_16 | sub | fabric | 0       |
+|    add_ln15_7_fu_1093_p2            |     |        | add_ln15_7  | add | fabric | 0       |
+|    sub_ln15_17_fu_1098_p2           |     |        | sub_ln15_17 | sub | fabric | 0       |
+|    sub_ln15_18_fu_1128_p2           |     |        | sub_ln15_18 | sub | fabric | 0       |
+|    sub_ln15_19_fu_1139_p2           |     |        | sub_ln15_19 | sub | fabric | 0       |
+|    add_ln15_8_fu_1267_p2            |     |        | add_ln15_8  | add | fabric | 0       |
+|    sub_ln15_20_fu_1272_p2           |     |        | sub_ln15_20 | sub | fabric | 0       |
+|    sub_ln15_21_fu_1302_p2           |     |        | sub_ln15_21 | sub | fabric | 0       |
+|    sub_ln15_22_fu_1313_p2           |     |        | sub_ln15_22 | sub | fabric | 0       |
+|    add_ln15_9_fu_1441_p2            |     |        | add_ln15_9  | add | fabric | 0       |
+|    sub_ln15_23_fu_1446_p2           |     |        | sub_ln15_23 | sub | fabric | 0       |
+|    sub_ln15_24_fu_1476_p2           |     |        | sub_ln15_24 | sub | fabric | 0       |
+|    sub_ln15_25_fu_1487_p2           |     |        | sub_ln15_25 | sub | fabric | 0       |
+|    add_ln15_10_fu_1646_p2           |     |        | add_ln15_10 | add | fabric | 0       |
+|    sub_ln15_26_fu_1651_p2           |     |        | sub_ln15_26 | sub | fabric | 0       |
+|    sub_ln15_27_fu_1681_p2           |     |        | sub_ln15_27 | sub | fabric | 0       |
+|    sub_ln15_28_fu_1692_p2           |     |        | sub_ln15_28 | sub | fabric | 0       |
+|    add_ln15_11_fu_1821_p2           |     |        | add_ln15_11 | add | fabric | 0       |
+|    sub_ln15_29_fu_1826_p2           |     |        | sub_ln15_29 | sub | fabric | 0       |
++-------------------------------------+-----+--------+-------------+-----+--------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++-------------------------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| Name                                | Usage     | Type      | BRAM | URAM | Pragma | Variable | Impl | Latency | Bitwidth, Depth, |
+|                                     |           |           |      |      |        |          |      |         | Banks            |
++-------------------------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| + conifer_xgboost_moons_accelerator |           |           | 4    | 0    |        |          |      |         |                  |
+|   control_s_axi_U                   | interface | s_axilite |      |      |        |          |      |         |                  |
+|   gmem0_m_axi_U                     | interface | m_axi     | 4    |      |        |          |      |         |                  |
++-------------------------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Pragmas with Warnings
++--------+---------+---------------------------------------------------------------+-----------------------------------------------------------+
+| Type   | Options | Location                                                      | Messages                                                  |
++--------+---------+---------------------------------------------------------------+-----------------------------------------------------------+
+| unroll |         | firmware/conifer_xgboost_moons.cpp:9 in conifer_xgboost_moons | '#pragma HLS unroll' can only be applied inside loop body |
++--------+---------+---------------------------------------------------------------+-----------------------------------------------------------+
+
+* Valid Pragma Syntax
++-----------------+-------------------------------------------------+------------------------------------------------------------------------------------+
+| Type            | Options                                         | Location                                                                           |
++-----------------+-------------------------------------------------+------------------------------------------------------------------------------------+
+| pipeline        | II = 1                                          | firmware/BDT.h:57 in decision_function                                             |
+| array_partition | variable=feature                                | firmware/BDT.h:58 in decision_function, feature                                    |
+| array_partition | variable=threshold                              | firmware/BDT.h:59 in decision_function, threshold                                  |
+| array_partition | variable=value                                  | firmware/BDT.h:60 in decision_function, value                                      |
+| array_partition | variable=children_left                          | firmware/BDT.h:61 in decision_function, children_left                              |
+| array_partition | variable=children_right                         | firmware/BDT.h:62 in decision_function, children_right                             |
+| array_partition | variable=parent                                 | firmware/BDT.h:63 in decision_function, parent                                     |
+| array_partition | variable=comparison                             | firmware/BDT.h:78 in decision_function, comparison                                 |
+| array_partition | variable=activation                             | firmware/BDT.h:79 in decision_function, activation                                 |
+| array_partition | variable=activation_leaf                        | firmware/BDT.h:80 in decision_function, activation_leaf                            |
+| array_partition | variable=value_leaf                             | firmware/BDT.h:81 in decision_function, value_leaf                                 |
+| unroll          |                                                 | firmware/BDT.h:85 in decision_function                                             |
+| unroll          |                                                 | firmware/BDT.h:98 in decision_function                                             |
+| array_partition | variable=scores dim=0                           | firmware/BDT.h:140 in decision_function, scores                                    |
+| array_partition | variable=x                                      | firmware/conifer_xgboost_moons.cpp:6 in conifer_xgboost_moons, x                   |
+| array_partition | variable=score                                  | firmware/conifer_xgboost_moons.cpp:7 in conifer_xgboost_moons, score               |
+| pipeline        |                                                 | firmware/conifer_xgboost_moons.cpp:8 in conifer_xgboost_moons                      |
+| interface       | mode=m_axi port=x offset=slave bundle=gmem0     | firmware/conifer_xgboost_moons.cpp:26 in conifer_xgboost_moons_accelerator, x      |
+| interface       | mode=m_axi port=score offset=slave bundle=gmem0 | firmware/conifer_xgboost_moons.cpp:27 in conifer_xgboost_moons_accelerator, score  |
+| interface       | mode=s_axilite port=x bundle=control            | firmware/conifer_xgboost_moons.cpp:28 in conifer_xgboost_moons_accelerator, x      |
+| interface       | mode=s_axilite port=score bundle=control        | firmware/conifer_xgboost_moons.cpp:29 in conifer_xgboost_moons_accelerator, score  |
+| interface       | mode=s_axilite port=N bundle=control            | firmware/conifer_xgboost_moons.cpp:30 in conifer_xgboost_moons_accelerator, N      |
+| interface       | mode=s_axilite port=n_f bundle=control          | firmware/conifer_xgboost_moons.cpp:31 in conifer_xgboost_moons_accelerator, n_f    |
+| interface       | mode=s_axilite port=n_c bundle=control          | firmware/conifer_xgboost_moons.cpp:32 in conifer_xgboost_moons_accelerator, n_c    |
+| interface       | mode=s_axilite port=return bundle=control       | firmware/conifer_xgboost_moons.cpp:33 in conifer_xgboost_moons_accelerator, return |
+| pipeline        |                                                 | firmware/conifer_xgboost_moons.cpp:37 in conifer_xgboost_moons_accelerator         |
++-----------------+-------------------------------------------------+------------------------------------------------------------------------------------+
+
+

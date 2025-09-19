@@ -1,0 +1,10 @@
+set prj_name my_prj
+set part xc7z020clg400-1
+set board_part tul.com.tw:pynq-z2:part0:1.0
+set processing_system_ip xilinx.com:ip:processing_system7:5.5
+set processing_system processing_system7
+set ps_s_axi_port S_AXI_HP0
+set ps_m_axi_port M_AXI_GP0
+set top my_prj_accelerator
+set ip_name conifer_my_prj
+set version 1.7

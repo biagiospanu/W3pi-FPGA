@@ -1,0 +1,1776 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Sep 19 13:38:28 2025
+# Process ID: 129182
+# Current directory: /home/bspanu/repo/conifer
+# Command line: vivado -mode batch -source vivado_synth.tcl
+# Log file: /home/bspanu/repo/conifer/vivado.log
+# Journal file: /home/bspanu/repo/conifer/vivado.jou
+# Running On: 8584d3dcbac9, OS: Linux, CPU Frequency: 2995.498 MHz, CPU Physical cores: 16, Host memory: 65844 MB
+#-----------------------------------------------------------
+source vivado_synth.tcl
+# add_files my_prj/solution1/syn/vhdl
+add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1339.988 ; gain = 36.840 ; free physical = 44495 ; free virtual = 60659
+# synth_design -top my_prj -part xc7z020clg400-1
+Command: synth_design -top my_prj -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 129224
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1761.523 ; gain = 415.539 ; free physical = 43764 ; free virtual = 59920
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'my_prj' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj.vhd:35]
+INFO: [Synth 8-3491] module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_18' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_18.vhd:11' bound to instance 'grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_18_fu_151' of component 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_18' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj.vhd:520]
+INFO: [Synth 8-638] synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_18' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_18.vhd:27]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter din0_WIDTH bound to: 12 - type: integer 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter din1_WIDTH bound to: 12 - type: integer 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter din2_WIDTH bound to: 12 - type: integer 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter din3_WIDTH bound to: 12 - type: integer 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter din4_WIDTH bound to: 12 - type: integer 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter din5_WIDTH bound to: 12 - type: integer 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter din6_WIDTH bound to: 12 - type: integer 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter din7_WIDTH bound to: 12 - type: integer 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter din8_WIDTH bound to: 12 - type: integer 
+	Parameter CASE9 bound to: 4'b1001 
+	Parameter din9_WIDTH bound to: 12 - type: integer 
+	Parameter CASE10 bound to: 4'b1010 
+	Parameter din10_WIDTH bound to: 12 - type: integer 
+	Parameter CASE11 bound to: 4'b1011 
+	Parameter din11_WIDTH bound to: 12 - type: integer 
+	Parameter CASE12 bound to: 4'b1100 
+	Parameter din12_WIDTH bound to: 12 - type: integer 
+	Parameter CASE13 bound to: 4'b1101 
+	Parameter din13_WIDTH bound to: 12 - type: integer 
+	Parameter CASE14 bound to: 4'b1110 
+	Parameter din14_WIDTH bound to: 12 - type: integer 
+	Parameter CASE15 bound to: 4'b1111 
+	Parameter din15_WIDTH bound to: 12 - type: integer 
+	Parameter def_WIDTH bound to: 12 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'my_prj_sparsemux_33_4_12_1_0' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_33_4_12_1_0.vhd:12' bound to instance 'sparsemux_33_4_12_1_0_U1' of component 'my_prj_sparsemux_33_4_12_1_0' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_18.vhd:295]
+INFO: [Synth 8-638] synthesizing module 'my_prj_sparsemux_33_4_12_1_0' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_33_4_12_1_0.vhd:127]
+	Parameter din0_WIDTH bound to: 12 - type: integer 
+	Parameter din1_WIDTH bound to: 12 - type: integer 
+	Parameter din2_WIDTH bound to: 12 - type: integer 
+	Parameter din3_WIDTH bound to: 12 - type: integer 
+	Parameter din4_WIDTH bound to: 12 - type: integer 
+	Parameter din5_WIDTH bound to: 12 - type: integer 
+	Parameter din6_WIDTH bound to: 12 - type: integer 
+	Parameter din7_WIDTH bound to: 12 - type: integer 
+	Parameter din8_WIDTH bound to: 12 - type: integer 
+	Parameter din9_WIDTH bound to: 12 - type: integer 
+	Parameter din10_WIDTH bound to: 12 - type: integer 
+	Parameter din11_WIDTH bound to: 12 - type: integer 
+	Parameter din12_WIDTH bound to: 12 - type: integer 
+	Parameter din13_WIDTH bound to: 12 - type: integer 
+	Parameter din14_WIDTH bound to: 12 - type: integer 
+	Parameter din15_WIDTH bound to: 12 - type: integer 
+	Parameter def_WIDTH bound to: 12 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 12 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter CASE9 bound to: 4'b1001 
+	Parameter CASE10 bound to: 4'b1010 
+	Parameter CASE11 bound to: 4'b1011 
+	Parameter CASE12 bound to: 4'b1100 
+	Parameter CASE13 bound to: 4'b1101 
+	Parameter CASE14 bound to: 4'b1110 
+	Parameter CASE15 bound to: 4'b1111 
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_33_4_12_1_0.vhd:134]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_sparsemux_33_4_12_1_0' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_33_4_12_1_0.vhd:127]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_18' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_18.vhd:27]
+INFO: [Synth 8-3491] module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_17' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_17.vhd:11' bound to instance 'grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_17_fu_169' of component 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_17' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj.vhd:534]
+INFO: [Synth 8-638] synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_17' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_17.vhd:28]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter din0_WIDTH bound to: 12 - type: integer 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter din1_WIDTH bound to: 12 - type: integer 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter din2_WIDTH bound to: 12 - type: integer 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter din3_WIDTH bound to: 12 - type: integer 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter din4_WIDTH bound to: 12 - type: integer 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter din5_WIDTH bound to: 12 - type: integer 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter din6_WIDTH bound to: 12 - type: integer 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter din7_WIDTH bound to: 12 - type: integer 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter din8_WIDTH bound to: 12 - type: integer 
+	Parameter CASE9 bound to: 4'b1001 
+	Parameter din9_WIDTH bound to: 12 - type: integer 
+	Parameter CASE10 bound to: 4'b1010 
+	Parameter din10_WIDTH bound to: 12 - type: integer 
+	Parameter CASE11 bound to: 4'b1011 
+	Parameter din11_WIDTH bound to: 12 - type: integer 
+	Parameter CASE12 bound to: 4'b1100 
+	Parameter din12_WIDTH bound to: 12 - type: integer 
+	Parameter CASE13 bound to: 4'b1101 
+	Parameter din13_WIDTH bound to: 12 - type: integer 
+	Parameter CASE14 bound to: 4'b1110 
+	Parameter din14_WIDTH bound to: 12 - type: integer 
+	Parameter CASE15 bound to: 4'b1111 
+	Parameter din15_WIDTH bound to: 12 - type: integer 
+	Parameter def_WIDTH bound to: 12 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'my_prj_sparsemux_33_4_12_1_0_x' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_33_4_12_1_0_x.vhd:12' bound to instance 'sparsemux_33_4_12_1_0_x_U10' of component 'my_prj_sparsemux_33_4_12_1_0_x' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_17.vhd:297]
+INFO: [Synth 8-638] synthesizing module 'my_prj_sparsemux_33_4_12_1_0_x' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_33_4_12_1_0_x.vhd:127]
+	Parameter din0_WIDTH bound to: 12 - type: integer 
+	Parameter din1_WIDTH bound to: 12 - type: integer 
+	Parameter din2_WIDTH bound to: 12 - type: integer 
+	Parameter din3_WIDTH bound to: 12 - type: integer 
+	Parameter din4_WIDTH bound to: 12 - type: integer 
+	Parameter din5_WIDTH bound to: 12 - type: integer 
+	Parameter din6_WIDTH bound to: 12 - type: integer 
+	Parameter din7_WIDTH bound to: 12 - type: integer 
+	Parameter din8_WIDTH bound to: 12 - type: integer 
+	Parameter din9_WIDTH bound to: 12 - type: integer 
+	Parameter din10_WIDTH bound to: 12 - type: integer 
+	Parameter din11_WIDTH bound to: 12 - type: integer 
+	Parameter din12_WIDTH bound to: 12 - type: integer 
+	Parameter din13_WIDTH bound to: 12 - type: integer 
+	Parameter din14_WIDTH bound to: 12 - type: integer 
+	Parameter din15_WIDTH bound to: 12 - type: integer 
+	Parameter def_WIDTH bound to: 12 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 12 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter CASE9 bound to: 4'b1001 
+	Parameter CASE10 bound to: 4'b1010 
+	Parameter CASE11 bound to: 4'b1011 
+	Parameter CASE12 bound to: 4'b1100 
+	Parameter CASE13 bound to: 4'b1101 
+	Parameter CASE14 bound to: 4'b1110 
+	Parameter CASE15 bound to: 4'b1111 
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_33_4_12_1_0_x.vhd:134]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_sparsemux_33_4_12_1_0_x' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_33_4_12_1_0_x.vhd:127]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_17' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_17.vhd:28]
+INFO: [Synth 8-3491] module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_7' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_7.vhd:11' bound to instance 'grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_7_fu_189' of component 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_7' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj.vhd:549]
+INFO: [Synth 8-638] synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_7' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_7.vhd:27]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter din3_WIDTH bound to: 11 - type: integer 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter din4_WIDTH bound to: 11 - type: integer 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter din5_WIDTH bound to: 11 - type: integer 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter din6_WIDTH bound to: 11 - type: integer 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter din7_WIDTH bound to: 11 - type: integer 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter din8_WIDTH bound to: 11 - type: integer 
+	Parameter CASE9 bound to: 4'b1001 
+	Parameter din9_WIDTH bound to: 11 - type: integer 
+	Parameter CASE10 bound to: 4'b1010 
+	Parameter din10_WIDTH bound to: 11 - type: integer 
+	Parameter CASE11 bound to: 4'b1011 
+	Parameter din11_WIDTH bound to: 11 - type: integer 
+	Parameter CASE12 bound to: 4'b1100 
+	Parameter din12_WIDTH bound to: 11 - type: integer 
+	Parameter CASE13 bound to: 4'b1101 
+	Parameter din13_WIDTH bound to: 11 - type: integer 
+	Parameter CASE14 bound to: 4'b1110 
+	Parameter din14_WIDTH bound to: 11 - type: integer 
+	Parameter CASE15 bound to: 4'b1111 
+	Parameter din15_WIDTH bound to: 11 - type: integer 
+	Parameter def_WIDTH bound to: 11 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'my_prj_sparsemux_33_4_11_1_0' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_33_4_11_1_0.vhd:12' bound to instance 'sparsemux_33_4_11_1_0_U20' of component 'my_prj_sparsemux_33_4_11_1_0' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_7.vhd:295]
+INFO: [Synth 8-638] synthesizing module 'my_prj_sparsemux_33_4_11_1_0' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_33_4_11_1_0.vhd:127]
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter din3_WIDTH bound to: 11 - type: integer 
+	Parameter din4_WIDTH bound to: 11 - type: integer 
+	Parameter din5_WIDTH bound to: 11 - type: integer 
+	Parameter din6_WIDTH bound to: 11 - type: integer 
+	Parameter din7_WIDTH bound to: 11 - type: integer 
+	Parameter din8_WIDTH bound to: 11 - type: integer 
+	Parameter din9_WIDTH bound to: 11 - type: integer 
+	Parameter din10_WIDTH bound to: 11 - type: integer 
+	Parameter din11_WIDTH bound to: 11 - type: integer 
+	Parameter din12_WIDTH bound to: 11 - type: integer 
+	Parameter din13_WIDTH bound to: 11 - type: integer 
+	Parameter din14_WIDTH bound to: 11 - type: integer 
+	Parameter din15_WIDTH bound to: 11 - type: integer 
+	Parameter def_WIDTH bound to: 11 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter CASE9 bound to: 4'b1001 
+	Parameter CASE10 bound to: 4'b1010 
+	Parameter CASE11 bound to: 4'b1011 
+	Parameter CASE12 bound to: 4'b1100 
+	Parameter CASE13 bound to: 4'b1101 
+	Parameter CASE14 bound to: 4'b1110 
+	Parameter CASE15 bound to: 4'b1111 
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_33_4_11_1_0.vhd:134]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_sparsemux_33_4_11_1_0' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_33_4_11_1_0.vhd:127]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_7' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_7.vhd:27]
+INFO: [Synth 8-3491] module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_6' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_6.vhd:11' bound to instance 'grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_6_fu_207' of component 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_6' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj.vhd:563]
+INFO: [Synth 8-638] synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_6' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_6.vhd:26]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter din3_WIDTH bound to: 11 - type: integer 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter din4_WIDTH bound to: 11 - type: integer 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter din5_WIDTH bound to: 11 - type: integer 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter din6_WIDTH bound to: 11 - type: integer 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter din7_WIDTH bound to: 11 - type: integer 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter din8_WIDTH bound to: 11 - type: integer 
+	Parameter CASE9 bound to: 4'b1001 
+	Parameter din9_WIDTH bound to: 11 - type: integer 
+	Parameter CASE10 bound to: 4'b1010 
+	Parameter din10_WIDTH bound to: 11 - type: integer 
+	Parameter CASE11 bound to: 4'b1011 
+	Parameter din11_WIDTH bound to: 11 - type: integer 
+	Parameter CASE12 bound to: 4'b1100 
+	Parameter din12_WIDTH bound to: 11 - type: integer 
+	Parameter CASE13 bound to: 4'b1101 
+	Parameter din13_WIDTH bound to: 11 - type: integer 
+	Parameter CASE14 bound to: 4'b1110 
+	Parameter din14_WIDTH bound to: 11 - type: integer 
+	Parameter CASE15 bound to: 4'b1111 
+	Parameter din15_WIDTH bound to: 11 - type: integer 
+	Parameter def_WIDTH bound to: 11 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'my_prj_sparsemux_33_4_11_1_0_x' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_33_4_11_1_0_x.vhd:12' bound to instance 'sparsemux_33_4_11_1_0_x_U29' of component 'my_prj_sparsemux_33_4_11_1_0_x' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_6.vhd:294]
+INFO: [Synth 8-638] synthesizing module 'my_prj_sparsemux_33_4_11_1_0_x' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_33_4_11_1_0_x.vhd:127]
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter din3_WIDTH bound to: 11 - type: integer 
+	Parameter din4_WIDTH bound to: 11 - type: integer 
+	Parameter din5_WIDTH bound to: 11 - type: integer 
+	Parameter din6_WIDTH bound to: 11 - type: integer 
+	Parameter din7_WIDTH bound to: 11 - type: integer 
+	Parameter din8_WIDTH bound to: 11 - type: integer 
+	Parameter din9_WIDTH bound to: 11 - type: integer 
+	Parameter din10_WIDTH bound to: 11 - type: integer 
+	Parameter din11_WIDTH bound to: 11 - type: integer 
+	Parameter din12_WIDTH bound to: 11 - type: integer 
+	Parameter din13_WIDTH bound to: 11 - type: integer 
+	Parameter din14_WIDTH bound to: 11 - type: integer 
+	Parameter din15_WIDTH bound to: 11 - type: integer 
+	Parameter def_WIDTH bound to: 11 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter CASE9 bound to: 4'b1001 
+	Parameter CASE10 bound to: 4'b1010 
+	Parameter CASE11 bound to: 4'b1011 
+	Parameter CASE12 bound to: 4'b1100 
+	Parameter CASE13 bound to: 4'b1101 
+	Parameter CASE14 bound to: 4'b1110 
+	Parameter CASE15 bound to: 4'b1111 
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_33_4_11_1_0_x.vhd:134]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_sparsemux_33_4_11_1_0_x' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_33_4_11_1_0_x.vhd:127]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_6' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_6.vhd:26]
+INFO: [Synth 8-3491] module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_5' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_5.vhd:11' bound to instance 'grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_5_fu_223' of component 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_5' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj.vhd:576]
+INFO: [Synth 8-638] synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_5' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_5.vhd:28]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter din0_WIDTH bound to: 12 - type: integer 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter din1_WIDTH bound to: 12 - type: integer 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter din2_WIDTH bound to: 12 - type: integer 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter din3_WIDTH bound to: 12 - type: integer 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter din4_WIDTH bound to: 12 - type: integer 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter din5_WIDTH bound to: 12 - type: integer 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter din6_WIDTH bound to: 12 - type: integer 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter din7_WIDTH bound to: 12 - type: integer 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter din8_WIDTH bound to: 12 - type: integer 
+	Parameter CASE9 bound to: 4'b1001 
+	Parameter din9_WIDTH bound to: 12 - type: integer 
+	Parameter CASE10 bound to: 4'b1010 
+	Parameter din10_WIDTH bound to: 12 - type: integer 
+	Parameter CASE11 bound to: 4'b1011 
+	Parameter din11_WIDTH bound to: 12 - type: integer 
+	Parameter CASE12 bound to: 4'b1100 
+	Parameter din12_WIDTH bound to: 12 - type: integer 
+	Parameter CASE13 bound to: 4'b1101 
+	Parameter din13_WIDTH bound to: 12 - type: integer 
+	Parameter CASE14 bound to: 4'b1110 
+	Parameter din14_WIDTH bound to: 12 - type: integer 
+	Parameter def_WIDTH bound to: 12 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'my_prj_sparsemux_31_4_12_1_0' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_31_4_12_1_0.vhd:12' bound to instance 'sparsemux_31_4_12_1_0_U37' of component 'my_prj_sparsemux_31_4_12_1_0' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_5.vhd:295]
+INFO: [Synth 8-638] synthesizing module 'my_prj_sparsemux_31_4_12_1_0' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_31_4_12_1_0.vhd:121]
+	Parameter din0_WIDTH bound to: 12 - type: integer 
+	Parameter din1_WIDTH bound to: 12 - type: integer 
+	Parameter din2_WIDTH bound to: 12 - type: integer 
+	Parameter din3_WIDTH bound to: 12 - type: integer 
+	Parameter din4_WIDTH bound to: 12 - type: integer 
+	Parameter din5_WIDTH bound to: 12 - type: integer 
+	Parameter din6_WIDTH bound to: 12 - type: integer 
+	Parameter din7_WIDTH bound to: 12 - type: integer 
+	Parameter din8_WIDTH bound to: 12 - type: integer 
+	Parameter din9_WIDTH bound to: 12 - type: integer 
+	Parameter din10_WIDTH bound to: 12 - type: integer 
+	Parameter din11_WIDTH bound to: 12 - type: integer 
+	Parameter din12_WIDTH bound to: 12 - type: integer 
+	Parameter din13_WIDTH bound to: 12 - type: integer 
+	Parameter din14_WIDTH bound to: 12 - type: integer 
+	Parameter def_WIDTH bound to: 12 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 12 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter CASE9 bound to: 4'b1001 
+	Parameter CASE10 bound to: 4'b1010 
+	Parameter CASE11 bound to: 4'b1011 
+	Parameter CASE12 bound to: 4'b1100 
+	Parameter CASE13 bound to: 4'b1101 
+	Parameter CASE14 bound to: 4'b1110 
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+WARNING: [Synth 8-614] signal 'def' is read in the process but is not in the sensitivity list [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_31_4_12_1_0.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_sparsemux_31_4_12_1_0' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_31_4_12_1_0.vhd:121]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_5' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_5.vhd:28]
+INFO: [Synth 8-3491] module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_4' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_4.vhd:11' bound to instance 'grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_4_fu_243' of component 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_4' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj.vhd:591]
+INFO: [Synth 8-638] synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_4' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_4.vhd:27]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter din3_WIDTH bound to: 11 - type: integer 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter din4_WIDTH bound to: 11 - type: integer 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter din5_WIDTH bound to: 11 - type: integer 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter din6_WIDTH bound to: 11 - type: integer 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter din7_WIDTH bound to: 11 - type: integer 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter din8_WIDTH bound to: 11 - type: integer 
+	Parameter CASE9 bound to: 4'b1001 
+	Parameter din9_WIDTH bound to: 11 - type: integer 
+	Parameter CASE10 bound to: 4'b1010 
+	Parameter din10_WIDTH bound to: 11 - type: integer 
+	Parameter CASE11 bound to: 4'b1011 
+	Parameter din11_WIDTH bound to: 11 - type: integer 
+	Parameter CASE12 bound to: 4'b1100 
+	Parameter din12_WIDTH bound to: 11 - type: integer 
+	Parameter CASE13 bound to: 4'b1101 
+	Parameter din13_WIDTH bound to: 11 - type: integer 
+	Parameter CASE14 bound to: 4'b1110 
+	Parameter din14_WIDTH bound to: 11 - type: integer 
+	Parameter CASE15 bound to: 4'b1111 
+	Parameter din15_WIDTH bound to: 11 - type: integer 
+	Parameter def_WIDTH bound to: 11 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'my_prj_sparsemux_33_4_11_1_0_x0' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_33_4_11_1_0_x0.vhd:12' bound to instance 'sparsemux_33_4_11_1_0_x0_U47' of component 'my_prj_sparsemux_33_4_11_1_0_x0' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_4.vhd:295]
+INFO: [Synth 8-638] synthesizing module 'my_prj_sparsemux_33_4_11_1_0_x0' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_33_4_11_1_0_x0.vhd:127]
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter din3_WIDTH bound to: 11 - type: integer 
+	Parameter din4_WIDTH bound to: 11 - type: integer 
+	Parameter din5_WIDTH bound to: 11 - type: integer 
+	Parameter din6_WIDTH bound to: 11 - type: integer 
+	Parameter din7_WIDTH bound to: 11 - type: integer 
+	Parameter din8_WIDTH bound to: 11 - type: integer 
+	Parameter din9_WIDTH bound to: 11 - type: integer 
+	Parameter din10_WIDTH bound to: 11 - type: integer 
+	Parameter din11_WIDTH bound to: 11 - type: integer 
+	Parameter din12_WIDTH bound to: 11 - type: integer 
+	Parameter din13_WIDTH bound to: 11 - type: integer 
+	Parameter din14_WIDTH bound to: 11 - type: integer 
+	Parameter din15_WIDTH bound to: 11 - type: integer 
+	Parameter def_WIDTH bound to: 11 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter CASE9 bound to: 4'b1001 
+	Parameter CASE10 bound to: 4'b1010 
+	Parameter CASE11 bound to: 4'b1011 
+	Parameter CASE12 bound to: 4'b1100 
+	Parameter CASE13 bound to: 4'b1101 
+	Parameter CASE14 bound to: 4'b1110 
+	Parameter CASE15 bound to: 4'b1111 
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_33_4_11_1_0_x0.vhd:134]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_sparsemux_33_4_11_1_0_x0' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_33_4_11_1_0_x0.vhd:127]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_4' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_4.vhd:27]
+INFO: [Synth 8-3491] module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_3' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_3.vhd:11' bound to instance 'grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_3_fu_261' of component 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_3' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj.vhd:605]
+INFO: [Synth 8-638] synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_3' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_3.vhd:27]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter din3_WIDTH bound to: 11 - type: integer 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter din4_WIDTH bound to: 11 - type: integer 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter din5_WIDTH bound to: 11 - type: integer 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter din6_WIDTH bound to: 11 - type: integer 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter din7_WIDTH bound to: 11 - type: integer 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter din8_WIDTH bound to: 11 - type: integer 
+	Parameter CASE9 bound to: 4'b1001 
+	Parameter din9_WIDTH bound to: 11 - type: integer 
+	Parameter CASE10 bound to: 4'b1010 
+	Parameter din10_WIDTH bound to: 11 - type: integer 
+	Parameter CASE11 bound to: 4'b1011 
+	Parameter din11_WIDTH bound to: 11 - type: integer 
+	Parameter CASE12 bound to: 4'b1100 
+	Parameter din12_WIDTH bound to: 11 - type: integer 
+	Parameter CASE13 bound to: 4'b1101 
+	Parameter din13_WIDTH bound to: 11 - type: integer 
+	Parameter CASE14 bound to: 4'b1110 
+	Parameter din14_WIDTH bound to: 11 - type: integer 
+	Parameter CASE15 bound to: 4'b1111 
+	Parameter din15_WIDTH bound to: 11 - type: integer 
+	Parameter def_WIDTH bound to: 11 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'my_prj_sparsemux_33_4_11_1_0_x1' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_33_4_11_1_0_x1.vhd:12' bound to instance 'sparsemux_33_4_11_1_0_x1_U56' of component 'my_prj_sparsemux_33_4_11_1_0_x1' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_3.vhd:298]
+INFO: [Synth 8-638] synthesizing module 'my_prj_sparsemux_33_4_11_1_0_x1' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_33_4_11_1_0_x1.vhd:127]
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter din3_WIDTH bound to: 11 - type: integer 
+	Parameter din4_WIDTH bound to: 11 - type: integer 
+	Parameter din5_WIDTH bound to: 11 - type: integer 
+	Parameter din6_WIDTH bound to: 11 - type: integer 
+	Parameter din7_WIDTH bound to: 11 - type: integer 
+	Parameter din8_WIDTH bound to: 11 - type: integer 
+	Parameter din9_WIDTH bound to: 11 - type: integer 
+	Parameter din10_WIDTH bound to: 11 - type: integer 
+	Parameter din11_WIDTH bound to: 11 - type: integer 
+	Parameter din12_WIDTH bound to: 11 - type: integer 
+	Parameter din13_WIDTH bound to: 11 - type: integer 
+	Parameter din14_WIDTH bound to: 11 - type: integer 
+	Parameter din15_WIDTH bound to: 11 - type: integer 
+	Parameter def_WIDTH bound to: 11 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter CASE9 bound to: 4'b1001 
+	Parameter CASE10 bound to: 4'b1010 
+	Parameter CASE11 bound to: 4'b1011 
+	Parameter CASE12 bound to: 4'b1100 
+	Parameter CASE13 bound to: 4'b1101 
+	Parameter CASE14 bound to: 4'b1110 
+	Parameter CASE15 bound to: 4'b1111 
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_33_4_11_1_0_x1.vhd:134]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_sparsemux_33_4_11_1_0_x1' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_33_4_11_1_0_x1.vhd:127]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_3' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_3.vhd:27]
+INFO: [Synth 8-3491] module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_2' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_2.vhd:11' bound to instance 'grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_2_fu_279' of component 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_2' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj.vhd:619]
+INFO: [Synth 8-638] synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_2' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_2.vhd:26]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter din3_WIDTH bound to: 11 - type: integer 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter din4_WIDTH bound to: 11 - type: integer 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter din5_WIDTH bound to: 11 - type: integer 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter din6_WIDTH bound to: 11 - type: integer 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter din7_WIDTH bound to: 11 - type: integer 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter din8_WIDTH bound to: 11 - type: integer 
+	Parameter CASE9 bound to: 4'b1001 
+	Parameter din9_WIDTH bound to: 11 - type: integer 
+	Parameter CASE10 bound to: 4'b1010 
+	Parameter din10_WIDTH bound to: 11 - type: integer 
+	Parameter CASE11 bound to: 4'b1011 
+	Parameter din11_WIDTH bound to: 11 - type: integer 
+	Parameter CASE12 bound to: 4'b1100 
+	Parameter din12_WIDTH bound to: 11 - type: integer 
+	Parameter CASE13 bound to: 4'b1101 
+	Parameter din13_WIDTH bound to: 11 - type: integer 
+	Parameter CASE14 bound to: 4'b1110 
+	Parameter din14_WIDTH bound to: 11 - type: integer 
+	Parameter def_WIDTH bound to: 11 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'my_prj_sparsemux_31_4_11_1_0' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_31_4_11_1_0.vhd:12' bound to instance 'sparsemux_31_4_11_1_0_U65' of component 'my_prj_sparsemux_31_4_11_1_0' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_2.vhd:275]
+INFO: [Synth 8-638] synthesizing module 'my_prj_sparsemux_31_4_11_1_0' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_31_4_11_1_0.vhd:121]
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter din3_WIDTH bound to: 11 - type: integer 
+	Parameter din4_WIDTH bound to: 11 - type: integer 
+	Parameter din5_WIDTH bound to: 11 - type: integer 
+	Parameter din6_WIDTH bound to: 11 - type: integer 
+	Parameter din7_WIDTH bound to: 11 - type: integer 
+	Parameter din8_WIDTH bound to: 11 - type: integer 
+	Parameter din9_WIDTH bound to: 11 - type: integer 
+	Parameter din10_WIDTH bound to: 11 - type: integer 
+	Parameter din11_WIDTH bound to: 11 - type: integer 
+	Parameter din12_WIDTH bound to: 11 - type: integer 
+	Parameter din13_WIDTH bound to: 11 - type: integer 
+	Parameter din14_WIDTH bound to: 11 - type: integer 
+	Parameter def_WIDTH bound to: 11 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter CASE9 bound to: 4'b1001 
+	Parameter CASE10 bound to: 4'b1010 
+	Parameter CASE11 bound to: 4'b1011 
+	Parameter CASE12 bound to: 4'b1100 
+	Parameter CASE13 bound to: 4'b1101 
+	Parameter CASE14 bound to: 4'b1110 
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+WARNING: [Synth 8-614] signal 'def' is read in the process but is not in the sensitivity list [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_31_4_11_1_0.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_sparsemux_31_4_11_1_0' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_31_4_11_1_0.vhd:121]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_2' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_2.vhd:26]
+INFO: [Synth 8-3491] module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_1' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_1.vhd:11' bound to instance 'grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_1_fu_295' of component 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_1' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj.vhd:632]
+INFO: [Synth 8-638] synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_1' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_1.vhd:28]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter din3_WIDTH bound to: 11 - type: integer 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter din4_WIDTH bound to: 11 - type: integer 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter din5_WIDTH bound to: 11 - type: integer 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter din6_WIDTH bound to: 11 - type: integer 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter din7_WIDTH bound to: 11 - type: integer 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter din8_WIDTH bound to: 11 - type: integer 
+	Parameter CASE9 bound to: 4'b1001 
+	Parameter din9_WIDTH bound to: 11 - type: integer 
+	Parameter CASE10 bound to: 4'b1010 
+	Parameter din10_WIDTH bound to: 11 - type: integer 
+	Parameter CASE11 bound to: 4'b1011 
+	Parameter din11_WIDTH bound to: 11 - type: integer 
+	Parameter CASE12 bound to: 4'b1100 
+	Parameter din12_WIDTH bound to: 11 - type: integer 
+	Parameter CASE13 bound to: 4'b1101 
+	Parameter din13_WIDTH bound to: 11 - type: integer 
+	Parameter CASE14 bound to: 4'b1110 
+	Parameter din14_WIDTH bound to: 11 - type: integer 
+	Parameter def_WIDTH bound to: 11 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'my_prj_sparsemux_31_4_11_1_0_x' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_31_4_11_1_0_x.vhd:12' bound to instance 'sparsemux_31_4_11_1_0_x_U73' of component 'my_prj_sparsemux_31_4_11_1_0_x' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_1.vhd:288]
+INFO: [Synth 8-638] synthesizing module 'my_prj_sparsemux_31_4_11_1_0_x' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_31_4_11_1_0_x.vhd:121]
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter din3_WIDTH bound to: 11 - type: integer 
+	Parameter din4_WIDTH bound to: 11 - type: integer 
+	Parameter din5_WIDTH bound to: 11 - type: integer 
+	Parameter din6_WIDTH bound to: 11 - type: integer 
+	Parameter din7_WIDTH bound to: 11 - type: integer 
+	Parameter din8_WIDTH bound to: 11 - type: integer 
+	Parameter din9_WIDTH bound to: 11 - type: integer 
+	Parameter din10_WIDTH bound to: 11 - type: integer 
+	Parameter din11_WIDTH bound to: 11 - type: integer 
+	Parameter din12_WIDTH bound to: 11 - type: integer 
+	Parameter din13_WIDTH bound to: 11 - type: integer 
+	Parameter din14_WIDTH bound to: 11 - type: integer 
+	Parameter def_WIDTH bound to: 11 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter CASE9 bound to: 4'b1001 
+	Parameter CASE10 bound to: 4'b1010 
+	Parameter CASE11 bound to: 4'b1011 
+	Parameter CASE12 bound to: 4'b1100 
+	Parameter CASE13 bound to: 4'b1101 
+	Parameter CASE14 bound to: 4'b1110 
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+WARNING: [Synth 8-614] signal 'def' is read in the process but is not in the sensitivity list [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_31_4_11_1_0_x.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_sparsemux_31_4_11_1_0_x' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_31_4_11_1_0_x.vhd:121]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_1' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_1.vhd:28]
+INFO: [Synth 8-3491] module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_s' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_s.vhd:11' bound to instance 'grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_s_fu_315' of component 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_s' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj.vhd:647]
+INFO: [Synth 8-638] synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_s' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_s.vhd:27]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter din3_WIDTH bound to: 11 - type: integer 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter din4_WIDTH bound to: 11 - type: integer 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter din5_WIDTH bound to: 11 - type: integer 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter din6_WIDTH bound to: 11 - type: integer 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter din7_WIDTH bound to: 11 - type: integer 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter din8_WIDTH bound to: 11 - type: integer 
+	Parameter CASE9 bound to: 4'b1001 
+	Parameter din9_WIDTH bound to: 11 - type: integer 
+	Parameter CASE10 bound to: 4'b1010 
+	Parameter din10_WIDTH bound to: 11 - type: integer 
+	Parameter CASE11 bound to: 4'b1011 
+	Parameter din11_WIDTH bound to: 11 - type: integer 
+	Parameter CASE12 bound to: 4'b1100 
+	Parameter din12_WIDTH bound to: 11 - type: integer 
+	Parameter def_WIDTH bound to: 11 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'my_prj_sparsemux_27_4_11_1_0' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_27_4_11_1_0.vhd:12' bound to instance 'sparsemux_27_4_11_1_0_U83' of component 'my_prj_sparsemux_27_4_11_1_0' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_s.vhd:261]
+INFO: [Synth 8-638] synthesizing module 'my_prj_sparsemux_27_4_11_1_0' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_27_4_11_1_0.vhd:109]
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter din3_WIDTH bound to: 11 - type: integer 
+	Parameter din4_WIDTH bound to: 11 - type: integer 
+	Parameter din5_WIDTH bound to: 11 - type: integer 
+	Parameter din6_WIDTH bound to: 11 - type: integer 
+	Parameter din7_WIDTH bound to: 11 - type: integer 
+	Parameter din8_WIDTH bound to: 11 - type: integer 
+	Parameter din9_WIDTH bound to: 11 - type: integer 
+	Parameter din10_WIDTH bound to: 11 - type: integer 
+	Parameter din11_WIDTH bound to: 11 - type: integer 
+	Parameter din12_WIDTH bound to: 11 - type: integer 
+	Parameter def_WIDTH bound to: 11 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter CASE9 bound to: 4'b1001 
+	Parameter CASE10 bound to: 4'b1010 
+	Parameter CASE11 bound to: 4'b1011 
+	Parameter CASE12 bound to: 4'b1100 
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+WARNING: [Synth 8-614] signal 'def' is read in the process but is not in the sensitivity list [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_27_4_11_1_0.vhd:114]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_sparsemux_27_4_11_1_0' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_27_4_11_1_0.vhd:109]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_s' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_s.vhd:27]
+INFO: [Synth 8-3491] module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_16' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_16.vhd:11' bound to instance 'grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_16_fu_333' of component 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_16' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj.vhd:661]
+INFO: [Synth 8-638] synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_16' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_16.vhd:27]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter din3_WIDTH bound to: 11 - type: integer 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter din4_WIDTH bound to: 11 - type: integer 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter din5_WIDTH bound to: 11 - type: integer 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter din6_WIDTH bound to: 11 - type: integer 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter din7_WIDTH bound to: 11 - type: integer 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter din8_WIDTH bound to: 11 - type: integer 
+	Parameter CASE9 bound to: 4'b1001 
+	Parameter din9_WIDTH bound to: 11 - type: integer 
+	Parameter CASE10 bound to: 4'b1010 
+	Parameter din10_WIDTH bound to: 11 - type: integer 
+	Parameter CASE11 bound to: 4'b1011 
+	Parameter din11_WIDTH bound to: 11 - type: integer 
+	Parameter def_WIDTH bound to: 11 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'my_prj_sparsemux_25_4_11_1_0' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_25_4_11_1_0.vhd:12' bound to instance 'sparsemux_25_4_11_1_0_U92' of component 'my_prj_sparsemux_25_4_11_1_0' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_16.vhd:233]
+INFO: [Synth 8-638] synthesizing module 'my_prj_sparsemux_25_4_11_1_0' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_25_4_11_1_0.vhd:103]
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter din3_WIDTH bound to: 11 - type: integer 
+	Parameter din4_WIDTH bound to: 11 - type: integer 
+	Parameter din5_WIDTH bound to: 11 - type: integer 
+	Parameter din6_WIDTH bound to: 11 - type: integer 
+	Parameter din7_WIDTH bound to: 11 - type: integer 
+	Parameter din8_WIDTH bound to: 11 - type: integer 
+	Parameter din9_WIDTH bound to: 11 - type: integer 
+	Parameter din10_WIDTH bound to: 11 - type: integer 
+	Parameter din11_WIDTH bound to: 11 - type: integer 
+	Parameter def_WIDTH bound to: 11 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter CASE9 bound to: 4'b1001 
+	Parameter CASE10 bound to: 4'b1010 
+	Parameter CASE11 bound to: 4'b1011 
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+WARNING: [Synth 8-614] signal 'def' is read in the process but is not in the sensitivity list [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_25_4_11_1_0.vhd:108]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_sparsemux_25_4_11_1_0' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_25_4_11_1_0.vhd:103]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_16' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_16.vhd:27]
+INFO: [Synth 8-3491] module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_15' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_15.vhd:11' bound to instance 'grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_15_fu_351' of component 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_15' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj.vhd:675]
+INFO: [Synth 8-638] synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_15' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_15.vhd:29]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter din3_WIDTH bound to: 11 - type: integer 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter din4_WIDTH bound to: 11 - type: integer 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter din5_WIDTH bound to: 11 - type: integer 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter din6_WIDTH bound to: 11 - type: integer 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter din7_WIDTH bound to: 11 - type: integer 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter din8_WIDTH bound to: 11 - type: integer 
+	Parameter CASE9 bound to: 4'b1001 
+	Parameter din9_WIDTH bound to: 11 - type: integer 
+	Parameter CASE10 bound to: 4'b1010 
+	Parameter din10_WIDTH bound to: 11 - type: integer 
+	Parameter CASE11 bound to: 4'b1011 
+	Parameter din11_WIDTH bound to: 11 - type: integer 
+	Parameter CASE12 bound to: 4'b1100 
+	Parameter din12_WIDTH bound to: 11 - type: integer 
+	Parameter CASE13 bound to: 4'b1101 
+	Parameter din13_WIDTH bound to: 11 - type: integer 
+	Parameter CASE14 bound to: 4'b1110 
+	Parameter din14_WIDTH bound to: 11 - type: integer 
+	Parameter CASE15 bound to: 4'b1111 
+	Parameter din15_WIDTH bound to: 11 - type: integer 
+	Parameter def_WIDTH bound to: 11 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'my_prj_sparsemux_33_4_11_1_0_x2' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_33_4_11_1_0_x2.vhd:12' bound to instance 'sparsemux_33_4_11_1_0_x2_U101' of component 'my_prj_sparsemux_33_4_11_1_0_x2' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_15.vhd:299]
+INFO: [Synth 8-638] synthesizing module 'my_prj_sparsemux_33_4_11_1_0_x2' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_33_4_11_1_0_x2.vhd:127]
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter din3_WIDTH bound to: 11 - type: integer 
+	Parameter din4_WIDTH bound to: 11 - type: integer 
+	Parameter din5_WIDTH bound to: 11 - type: integer 
+	Parameter din6_WIDTH bound to: 11 - type: integer 
+	Parameter din7_WIDTH bound to: 11 - type: integer 
+	Parameter din8_WIDTH bound to: 11 - type: integer 
+	Parameter din9_WIDTH bound to: 11 - type: integer 
+	Parameter din10_WIDTH bound to: 11 - type: integer 
+	Parameter din11_WIDTH bound to: 11 - type: integer 
+	Parameter din12_WIDTH bound to: 11 - type: integer 
+	Parameter din13_WIDTH bound to: 11 - type: integer 
+	Parameter din14_WIDTH bound to: 11 - type: integer 
+	Parameter din15_WIDTH bound to: 11 - type: integer 
+	Parameter def_WIDTH bound to: 11 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter CASE9 bound to: 4'b1001 
+	Parameter CASE10 bound to: 4'b1010 
+	Parameter CASE11 bound to: 4'b1011 
+	Parameter CASE12 bound to: 4'b1100 
+	Parameter CASE13 bound to: 4'b1101 
+	Parameter CASE14 bound to: 4'b1110 
+	Parameter CASE15 bound to: 4'b1111 
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_33_4_11_1_0_x2.vhd:134]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_sparsemux_33_4_11_1_0_x2' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_33_4_11_1_0_x2.vhd:127]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_15' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_15.vhd:29]
+INFO: [Synth 8-3491] module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_14' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_14.vhd:11' bound to instance 'grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_14_fu_373' of component 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_14' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj.vhd:691]
+INFO: [Synth 8-638] synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_14' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_14.vhd:27]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter din3_WIDTH bound to: 11 - type: integer 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter din4_WIDTH bound to: 11 - type: integer 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter din5_WIDTH bound to: 11 - type: integer 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter din6_WIDTH bound to: 11 - type: integer 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter din7_WIDTH bound to: 11 - type: integer 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter din8_WIDTH bound to: 11 - type: integer 
+	Parameter CASE9 bound to: 4'b1001 
+	Parameter din9_WIDTH bound to: 11 - type: integer 
+	Parameter CASE10 bound to: 4'b1010 
+	Parameter din10_WIDTH bound to: 11 - type: integer 
+	Parameter CASE11 bound to: 4'b1011 
+	Parameter din11_WIDTH bound to: 11 - type: integer 
+	Parameter CASE12 bound to: 4'b1100 
+	Parameter din12_WIDTH bound to: 11 - type: integer 
+	Parameter CASE13 bound to: 4'b1101 
+	Parameter din13_WIDTH bound to: 11 - type: integer 
+	Parameter def_WIDTH bound to: 11 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'my_prj_sparsemux_29_4_11_1_0' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_29_4_11_1_0.vhd:12' bound to instance 'sparsemux_29_4_11_1_0_U112' of component 'my_prj_sparsemux_29_4_11_1_0' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_14.vhd:272]
+INFO: [Synth 8-638] synthesizing module 'my_prj_sparsemux_29_4_11_1_0' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_29_4_11_1_0.vhd:115]
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter din3_WIDTH bound to: 11 - type: integer 
+	Parameter din4_WIDTH bound to: 11 - type: integer 
+	Parameter din5_WIDTH bound to: 11 - type: integer 
+	Parameter din6_WIDTH bound to: 11 - type: integer 
+	Parameter din7_WIDTH bound to: 11 - type: integer 
+	Parameter din8_WIDTH bound to: 11 - type: integer 
+	Parameter din9_WIDTH bound to: 11 - type: integer 
+	Parameter din10_WIDTH bound to: 11 - type: integer 
+	Parameter din11_WIDTH bound to: 11 - type: integer 
+	Parameter din12_WIDTH bound to: 11 - type: integer 
+	Parameter din13_WIDTH bound to: 11 - type: integer 
+	Parameter def_WIDTH bound to: 11 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter CASE9 bound to: 4'b1001 
+	Parameter CASE10 bound to: 4'b1010 
+	Parameter CASE11 bound to: 4'b1011 
+	Parameter CASE12 bound to: 4'b1100 
+	Parameter CASE13 bound to: 4'b1101 
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+WARNING: [Synth 8-614] signal 'def' is read in the process but is not in the sensitivity list [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_29_4_11_1_0.vhd:120]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_sparsemux_29_4_11_1_0' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_29_4_11_1_0.vhd:115]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_14' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_14.vhd:27]
+INFO: [Synth 8-3491] module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_13' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_13.vhd:11' bound to instance 'grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_13_fu_391' of component 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_13' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj.vhd:705]
+INFO: [Synth 8-638] synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_13' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_13.vhd:28]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter din3_WIDTH bound to: 11 - type: integer 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter din4_WIDTH bound to: 11 - type: integer 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter din5_WIDTH bound to: 11 - type: integer 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter din6_WIDTH bound to: 11 - type: integer 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter din7_WIDTH bound to: 11 - type: integer 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter din8_WIDTH bound to: 11 - type: integer 
+	Parameter CASE9 bound to: 4'b1001 
+	Parameter din9_WIDTH bound to: 11 - type: integer 
+	Parameter CASE10 bound to: 4'b1010 
+	Parameter din10_WIDTH bound to: 11 - type: integer 
+	Parameter CASE11 bound to: 4'b1011 
+	Parameter din11_WIDTH bound to: 11 - type: integer 
+	Parameter CASE12 bound to: 4'b1100 
+	Parameter din12_WIDTH bound to: 11 - type: integer 
+	Parameter CASE13 bound to: 4'b1101 
+	Parameter din13_WIDTH bound to: 11 - type: integer 
+	Parameter CASE14 bound to: 4'b1110 
+	Parameter din14_WIDTH bound to: 11 - type: integer 
+	Parameter CASE15 bound to: 4'b1111 
+	Parameter din15_WIDTH bound to: 11 - type: integer 
+	Parameter def_WIDTH bound to: 11 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'my_prj_sparsemux_33_4_11_1_0_x3' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_33_4_11_1_0_x3.vhd:12' bound to instance 'sparsemux_33_4_11_1_0_x3_U121' of component 'my_prj_sparsemux_33_4_11_1_0_x3' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_13.vhd:297]
+INFO: [Synth 8-638] synthesizing module 'my_prj_sparsemux_33_4_11_1_0_x3' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_33_4_11_1_0_x3.vhd:127]
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter din3_WIDTH bound to: 11 - type: integer 
+	Parameter din4_WIDTH bound to: 11 - type: integer 
+	Parameter din5_WIDTH bound to: 11 - type: integer 
+	Parameter din6_WIDTH bound to: 11 - type: integer 
+	Parameter din7_WIDTH bound to: 11 - type: integer 
+	Parameter din8_WIDTH bound to: 11 - type: integer 
+	Parameter din9_WIDTH bound to: 11 - type: integer 
+	Parameter din10_WIDTH bound to: 11 - type: integer 
+	Parameter din11_WIDTH bound to: 11 - type: integer 
+	Parameter din12_WIDTH bound to: 11 - type: integer 
+	Parameter din13_WIDTH bound to: 11 - type: integer 
+	Parameter din14_WIDTH bound to: 11 - type: integer 
+	Parameter din15_WIDTH bound to: 11 - type: integer 
+	Parameter def_WIDTH bound to: 11 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter CASE9 bound to: 4'b1001 
+	Parameter CASE10 bound to: 4'b1010 
+	Parameter CASE11 bound to: 4'b1011 
+	Parameter CASE12 bound to: 4'b1100 
+	Parameter CASE13 bound to: 4'b1101 
+	Parameter CASE14 bound to: 4'b1110 
+	Parameter CASE15 bound to: 4'b1111 
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_33_4_11_1_0_x3.vhd:134]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_sparsemux_33_4_11_1_0_x3' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_33_4_11_1_0_x3.vhd:127]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_13' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_13.vhd:28]
+INFO: [Synth 8-3491] module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_12' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_12.vhd:11' bound to instance 'grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_12_fu_411' of component 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_12' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj.vhd:720]
+INFO: [Synth 8-638] synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_12' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_12.vhd:26]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter din3_WIDTH bound to: 11 - type: integer 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter din4_WIDTH bound to: 11 - type: integer 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter din5_WIDTH bound to: 11 - type: integer 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter din6_WIDTH bound to: 11 - type: integer 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter din7_WIDTH bound to: 11 - type: integer 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter din8_WIDTH bound to: 11 - type: integer 
+	Parameter CASE9 bound to: 4'b1001 
+	Parameter din9_WIDTH bound to: 11 - type: integer 
+	Parameter CASE10 bound to: 4'b1010 
+	Parameter din10_WIDTH bound to: 11 - type: integer 
+	Parameter CASE11 bound to: 4'b1011 
+	Parameter din11_WIDTH bound to: 11 - type: integer 
+	Parameter CASE12 bound to: 4'b1100 
+	Parameter din12_WIDTH bound to: 11 - type: integer 
+	Parameter CASE13 bound to: 4'b1101 
+	Parameter din13_WIDTH bound to: 11 - type: integer 
+	Parameter CASE14 bound to: 4'b1110 
+	Parameter din14_WIDTH bound to: 11 - type: integer 
+	Parameter def_WIDTH bound to: 11 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'my_prj_sparsemux_31_4_11_1_0_x0' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_31_4_11_1_0_x0.vhd:12' bound to instance 'sparsemux_31_4_11_1_0_x0_U131' of component 'my_prj_sparsemux_31_4_11_1_0_x0' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_12.vhd:288]
+INFO: [Synth 8-638] synthesizing module 'my_prj_sparsemux_31_4_11_1_0_x0' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_31_4_11_1_0_x0.vhd:121]
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter din3_WIDTH bound to: 11 - type: integer 
+	Parameter din4_WIDTH bound to: 11 - type: integer 
+	Parameter din5_WIDTH bound to: 11 - type: integer 
+	Parameter din6_WIDTH bound to: 11 - type: integer 
+	Parameter din7_WIDTH bound to: 11 - type: integer 
+	Parameter din8_WIDTH bound to: 11 - type: integer 
+	Parameter din9_WIDTH bound to: 11 - type: integer 
+	Parameter din10_WIDTH bound to: 11 - type: integer 
+	Parameter din11_WIDTH bound to: 11 - type: integer 
+	Parameter din12_WIDTH bound to: 11 - type: integer 
+	Parameter din13_WIDTH bound to: 11 - type: integer 
+	Parameter din14_WIDTH bound to: 11 - type: integer 
+	Parameter def_WIDTH bound to: 11 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter CASE9 bound to: 4'b1001 
+	Parameter CASE10 bound to: 4'b1010 
+	Parameter CASE11 bound to: 4'b1011 
+	Parameter CASE12 bound to: 4'b1100 
+	Parameter CASE13 bound to: 4'b1101 
+	Parameter CASE14 bound to: 4'b1110 
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+WARNING: [Synth 8-614] signal 'def' is read in the process but is not in the sensitivity list [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_31_4_11_1_0_x0.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_sparsemux_31_4_11_1_0_x0' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_31_4_11_1_0_x0.vhd:121]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_12' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_12.vhd:26]
+INFO: [Synth 8-3491] module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_11' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_11.vhd:11' bound to instance 'grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_11_fu_427' of component 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_11' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj.vhd:733]
+INFO: [Synth 8-638] synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_11' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_11.vhd:26]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter din3_WIDTH bound to: 11 - type: integer 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter din4_WIDTH bound to: 11 - type: integer 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter din5_WIDTH bound to: 11 - type: integer 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter din6_WIDTH bound to: 11 - type: integer 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter din7_WIDTH bound to: 11 - type: integer 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter din8_WIDTH bound to: 11 - type: integer 
+	Parameter def_WIDTH bound to: 11 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'my_prj_sparsemux_19_4_11_1_0' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_19_4_11_1_0.vhd:12' bound to instance 'sparsemux_19_4_11_1_0_U139' of component 'my_prj_sparsemux_19_4_11_1_0' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_11.vhd:189]
+INFO: [Synth 8-638] synthesizing module 'my_prj_sparsemux_19_4_11_1_0' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_19_4_11_1_0.vhd:85]
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter din3_WIDTH bound to: 11 - type: integer 
+	Parameter din4_WIDTH bound to: 11 - type: integer 
+	Parameter din5_WIDTH bound to: 11 - type: integer 
+	Parameter din6_WIDTH bound to: 11 - type: integer 
+	Parameter din7_WIDTH bound to: 11 - type: integer 
+	Parameter din8_WIDTH bound to: 11 - type: integer 
+	Parameter def_WIDTH bound to: 11 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+WARNING: [Synth 8-614] signal 'def' is read in the process but is not in the sensitivity list [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_19_4_11_1_0.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_sparsemux_19_4_11_1_0' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_19_4_11_1_0.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_11' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_11.vhd:26]
+INFO: [Synth 8-3491] module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_10' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_10.vhd:11' bound to instance 'grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_10_fu_443' of component 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_10' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj.vhd:746]
+INFO: [Synth 8-638] synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_10' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_10.vhd:28]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter din3_WIDTH bound to: 11 - type: integer 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter din4_WIDTH bound to: 11 - type: integer 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter din5_WIDTH bound to: 11 - type: integer 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter din6_WIDTH bound to: 11 - type: integer 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter din7_WIDTH bound to: 11 - type: integer 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter din8_WIDTH bound to: 11 - type: integer 
+	Parameter CASE9 bound to: 4'b1001 
+	Parameter din9_WIDTH bound to: 11 - type: integer 
+	Parameter CASE10 bound to: 4'b1010 
+	Parameter din10_WIDTH bound to: 11 - type: integer 
+	Parameter CASE11 bound to: 4'b1011 
+	Parameter din11_WIDTH bound to: 11 - type: integer 
+	Parameter CASE12 bound to: 4'b1100 
+	Parameter din12_WIDTH bound to: 11 - type: integer 
+	Parameter CASE13 bound to: 4'b1101 
+	Parameter din13_WIDTH bound to: 11 - type: integer 
+	Parameter CASE14 bound to: 4'b1110 
+	Parameter din14_WIDTH bound to: 11 - type: integer 
+	Parameter def_WIDTH bound to: 11 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'my_prj_sparsemux_31_4_11_1_0_x1' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_31_4_11_1_0_x1.vhd:12' bound to instance 'sparsemux_31_4_11_1_0_x1_U147' of component 'my_prj_sparsemux_31_4_11_1_0_x1' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_10.vhd:278]
+INFO: [Synth 8-638] synthesizing module 'my_prj_sparsemux_31_4_11_1_0_x1' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_31_4_11_1_0_x1.vhd:121]
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter din3_WIDTH bound to: 11 - type: integer 
+	Parameter din4_WIDTH bound to: 11 - type: integer 
+	Parameter din5_WIDTH bound to: 11 - type: integer 
+	Parameter din6_WIDTH bound to: 11 - type: integer 
+	Parameter din7_WIDTH bound to: 11 - type: integer 
+	Parameter din8_WIDTH bound to: 11 - type: integer 
+	Parameter din9_WIDTH bound to: 11 - type: integer 
+	Parameter din10_WIDTH bound to: 11 - type: integer 
+	Parameter din11_WIDTH bound to: 11 - type: integer 
+	Parameter din12_WIDTH bound to: 11 - type: integer 
+	Parameter din13_WIDTH bound to: 11 - type: integer 
+	Parameter din14_WIDTH bound to: 11 - type: integer 
+	Parameter def_WIDTH bound to: 11 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter CASE9 bound to: 4'b1001 
+	Parameter CASE10 bound to: 4'b1010 
+	Parameter CASE11 bound to: 4'b1011 
+	Parameter CASE12 bound to: 4'b1100 
+	Parameter CASE13 bound to: 4'b1101 
+	Parameter CASE14 bound to: 4'b1110 
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+WARNING: [Synth 8-614] signal 'def' is read in the process but is not in the sensitivity list [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_31_4_11_1_0_x1.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_sparsemux_31_4_11_1_0_x1' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_31_4_11_1_0_x1.vhd:121]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_10' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_10.vhd:28]
+INFO: [Synth 8-3491] module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_9' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_9.vhd:11' bound to instance 'grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_9_fu_463' of component 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_9' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj.vhd:761]
+INFO: [Synth 8-638] synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_9' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_9.vhd:27]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter din3_WIDTH bound to: 11 - type: integer 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter din4_WIDTH bound to: 11 - type: integer 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter din5_WIDTH bound to: 11 - type: integer 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter din6_WIDTH bound to: 11 - type: integer 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter din7_WIDTH bound to: 11 - type: integer 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter din8_WIDTH bound to: 11 - type: integer 
+	Parameter CASE9 bound to: 4'b1001 
+	Parameter din9_WIDTH bound to: 11 - type: integer 
+	Parameter CASE10 bound to: 4'b1010 
+	Parameter din10_WIDTH bound to: 11 - type: integer 
+	Parameter CASE11 bound to: 4'b1011 
+	Parameter din11_WIDTH bound to: 11 - type: integer 
+	Parameter def_WIDTH bound to: 11 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'my_prj_sparsemux_25_4_11_1_0_x' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_25_4_11_1_0_x.vhd:12' bound to instance 'sparsemux_25_4_11_1_0_x_U157' of component 'my_prj_sparsemux_25_4_11_1_0_x' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_9.vhd:230]
+INFO: [Synth 8-638] synthesizing module 'my_prj_sparsemux_25_4_11_1_0_x' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_25_4_11_1_0_x.vhd:103]
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter din3_WIDTH bound to: 11 - type: integer 
+	Parameter din4_WIDTH bound to: 11 - type: integer 
+	Parameter din5_WIDTH bound to: 11 - type: integer 
+	Parameter din6_WIDTH bound to: 11 - type: integer 
+	Parameter din7_WIDTH bound to: 11 - type: integer 
+	Parameter din8_WIDTH bound to: 11 - type: integer 
+	Parameter din9_WIDTH bound to: 11 - type: integer 
+	Parameter din10_WIDTH bound to: 11 - type: integer 
+	Parameter din11_WIDTH bound to: 11 - type: integer 
+	Parameter def_WIDTH bound to: 11 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter CASE9 bound to: 4'b1001 
+	Parameter CASE10 bound to: 4'b1010 
+	Parameter CASE11 bound to: 4'b1011 
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+WARNING: [Synth 8-614] signal 'def' is read in the process but is not in the sensitivity list [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_25_4_11_1_0_x.vhd:108]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_sparsemux_25_4_11_1_0_x' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_25_4_11_1_0_x.vhd:103]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_9' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_9.vhd:27]
+INFO: [Synth 8-3491] module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_8' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_8.vhd:11' bound to instance 'grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_8_fu_481' of component 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_8' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj.vhd:775]
+INFO: [Synth 8-638] synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_8' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_8.vhd:26]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter din3_WIDTH bound to: 11 - type: integer 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter din4_WIDTH bound to: 11 - type: integer 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter din5_WIDTH bound to: 11 - type: integer 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter din6_WIDTH bound to: 11 - type: integer 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter din7_WIDTH bound to: 11 - type: integer 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter din8_WIDTH bound to: 11 - type: integer 
+	Parameter def_WIDTH bound to: 11 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-3491] module 'my_prj_sparsemux_19_4_11_1_0_x' declared at '/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_19_4_11_1_0_x.vhd:12' bound to instance 'sparsemux_19_4_11_1_0_x_U166' of component 'my_prj_sparsemux_19_4_11_1_0_x' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_8.vhd:188]
+INFO: [Synth 8-638] synthesizing module 'my_prj_sparsemux_19_4_11_1_0_x' [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_19_4_11_1_0_x.vhd:85]
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter din2_WIDTH bound to: 11 - type: integer 
+	Parameter din3_WIDTH bound to: 11 - type: integer 
+	Parameter din4_WIDTH bound to: 11 - type: integer 
+	Parameter din5_WIDTH bound to: 11 - type: integer 
+	Parameter din6_WIDTH bound to: 11 - type: integer 
+	Parameter din7_WIDTH bound to: 11 - type: integer 
+	Parameter din8_WIDTH bound to: 11 - type: integer 
+	Parameter def_WIDTH bound to: 11 - type: integer 
+	Parameter sel_WIDTH bound to: 4 - type: integer 
+	Parameter dout_WIDTH bound to: 11 - type: integer 
+	Parameter CASE0 bound to: 4'b0000 
+	Parameter CASE1 bound to: 4'b0001 
+	Parameter CASE2 bound to: 4'b0010 
+	Parameter CASE3 bound to: 4'b0011 
+	Parameter CASE4 bound to: 4'b0100 
+	Parameter CASE5 bound to: 4'b0101 
+	Parameter CASE6 bound to: 4'b0110 
+	Parameter CASE7 bound to: 4'b0111 
+	Parameter CASE8 bound to: 4'b1000 
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+WARNING: [Synth 8-614] signal 'def' is read in the process but is not in the sensitivity list [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_19_4_11_1_0_x.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_sparsemux_19_4_11_1_0_x' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_sparsemux_19_4_11_1_0_x.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_8' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_8.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'my_prj' (0#1) [/home/bspanu/repo/conifer/my_prj/solution1/syn/vhdl/my_prj.vhd:35]
+WARNING: [Synth 8-7129] Port ap_rst in module my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ap_rst in module my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ap_rst in module my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ap_rst in module my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ap_rst in module my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[10] in module my_prj_sparsemux_33_4_11_1_0_x3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[9] in module my_prj_sparsemux_33_4_11_1_0_x3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[8] in module my_prj_sparsemux_33_4_11_1_0_x3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[7] in module my_prj_sparsemux_33_4_11_1_0_x3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[6] in module my_prj_sparsemux_33_4_11_1_0_x3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[5] in module my_prj_sparsemux_33_4_11_1_0_x3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[4] in module my_prj_sparsemux_33_4_11_1_0_x3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[3] in module my_prj_sparsemux_33_4_11_1_0_x3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[2] in module my_prj_sparsemux_33_4_11_1_0_x3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[1] in module my_prj_sparsemux_33_4_11_1_0_x3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[0] in module my_prj_sparsemux_33_4_11_1_0_x3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ap_rst in module my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ap_rst in module my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[10] in module my_prj_sparsemux_33_4_11_1_0_x2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[9] in module my_prj_sparsemux_33_4_11_1_0_x2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[8] in module my_prj_sparsemux_33_4_11_1_0_x2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[7] in module my_prj_sparsemux_33_4_11_1_0_x2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[6] in module my_prj_sparsemux_33_4_11_1_0_x2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[5] in module my_prj_sparsemux_33_4_11_1_0_x2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[4] in module my_prj_sparsemux_33_4_11_1_0_x2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[3] in module my_prj_sparsemux_33_4_11_1_0_x2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[2] in module my_prj_sparsemux_33_4_11_1_0_x2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[1] in module my_prj_sparsemux_33_4_11_1_0_x2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[0] in module my_prj_sparsemux_33_4_11_1_0_x2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ap_rst in module my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ap_rst in module my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_16 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ap_rst in module my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_s is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ap_rst in module my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ap_rst in module my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[10] in module my_prj_sparsemux_33_4_11_1_0_x1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[9] in module my_prj_sparsemux_33_4_11_1_0_x1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[8] in module my_prj_sparsemux_33_4_11_1_0_x1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[7] in module my_prj_sparsemux_33_4_11_1_0_x1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[6] in module my_prj_sparsemux_33_4_11_1_0_x1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[5] in module my_prj_sparsemux_33_4_11_1_0_x1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[4] in module my_prj_sparsemux_33_4_11_1_0_x1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[3] in module my_prj_sparsemux_33_4_11_1_0_x1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[2] in module my_prj_sparsemux_33_4_11_1_0_x1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[1] in module my_prj_sparsemux_33_4_11_1_0_x1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[0] in module my_prj_sparsemux_33_4_11_1_0_x1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ap_rst in module my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[10] in module my_prj_sparsemux_33_4_11_1_0_x0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[9] in module my_prj_sparsemux_33_4_11_1_0_x0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[8] in module my_prj_sparsemux_33_4_11_1_0_x0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[7] in module my_prj_sparsemux_33_4_11_1_0_x0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[6] in module my_prj_sparsemux_33_4_11_1_0_x0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[5] in module my_prj_sparsemux_33_4_11_1_0_x0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[4] in module my_prj_sparsemux_33_4_11_1_0_x0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[3] in module my_prj_sparsemux_33_4_11_1_0_x0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[2] in module my_prj_sparsemux_33_4_11_1_0_x0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[1] in module my_prj_sparsemux_33_4_11_1_0_x0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[0] in module my_prj_sparsemux_33_4_11_1_0_x0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ap_rst in module my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ap_rst in module my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[10] in module my_prj_sparsemux_33_4_11_1_0_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[9] in module my_prj_sparsemux_33_4_11_1_0_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[8] in module my_prj_sparsemux_33_4_11_1_0_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[7] in module my_prj_sparsemux_33_4_11_1_0_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[6] in module my_prj_sparsemux_33_4_11_1_0_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[5] in module my_prj_sparsemux_33_4_11_1_0_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[4] in module my_prj_sparsemux_33_4_11_1_0_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[3] in module my_prj_sparsemux_33_4_11_1_0_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[2] in module my_prj_sparsemux_33_4_11_1_0_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[1] in module my_prj_sparsemux_33_4_11_1_0_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[0] in module my_prj_sparsemux_33_4_11_1_0_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ap_rst in module my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[10] in module my_prj_sparsemux_33_4_11_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[9] in module my_prj_sparsemux_33_4_11_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[8] in module my_prj_sparsemux_33_4_11_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[7] in module my_prj_sparsemux_33_4_11_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[6] in module my_prj_sparsemux_33_4_11_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[5] in module my_prj_sparsemux_33_4_11_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[4] in module my_prj_sparsemux_33_4_11_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[3] in module my_prj_sparsemux_33_4_11_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[2] in module my_prj_sparsemux_33_4_11_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[1] in module my_prj_sparsemux_33_4_11_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[0] in module my_prj_sparsemux_33_4_11_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ap_rst in module my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[11] in module my_prj_sparsemux_33_4_12_1_0_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[10] in module my_prj_sparsemux_33_4_12_1_0_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[9] in module my_prj_sparsemux_33_4_12_1_0_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[8] in module my_prj_sparsemux_33_4_12_1_0_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[7] in module my_prj_sparsemux_33_4_12_1_0_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[6] in module my_prj_sparsemux_33_4_12_1_0_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[5] in module my_prj_sparsemux_33_4_12_1_0_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[4] in module my_prj_sparsemux_33_4_12_1_0_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[3] in module my_prj_sparsemux_33_4_12_1_0_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[2] in module my_prj_sparsemux_33_4_12_1_0_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[1] in module my_prj_sparsemux_33_4_12_1_0_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[0] in module my_prj_sparsemux_33_4_12_1_0_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ap_rst in module my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_17 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[11] in module my_prj_sparsemux_33_4_12_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[10] in module my_prj_sparsemux_33_4_12_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[9] in module my_prj_sparsemux_33_4_12_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port def[8] in module my_prj_sparsemux_33_4_12_1_0 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1877.461 ; gain = 531.477 ; free physical = 43623 ; free virtual = 59781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1895.273 ; gain = 549.289 ; free physical = 43623 ; free virtual = 59781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1903.277 ; gain = 557.293 ; free physical = 43623 ; free virtual = 59781
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1928.199 ; gain = 582.215 ; free physical = 43595 ; free virtual = 59747
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   15 Bit       Adders := 2     
+	   2 Input   14 Bit       Adders := 3     
+	   2 Input   13 Bit       Adders := 6     
+	   2 Input   12 Bit       Adders := 6     
++---XORs : 
+	   2 Input      1 Bit         XORs := 139   
++---Registers : 
+	               18 Bit    Registers := 135   
+	               15 Bit    Registers := 2     
+	               13 Bit    Registers := 8     
+	               12 Bit    Registers := 5     
+	               11 Bit    Registers := 34    
+	                4 Bit    Registers := 25    
+	                3 Bit    Registers := 10    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 814   
++---Muxes : 
+	   2 Input   12 Bit        Muxes := 3     
+	   2 Input   11 Bit        Muxes := 16    
+	   2 Input    4 Bit        Muxes := 120   
+	   2 Input    3 Bit        Muxes := 76    
+	   2 Input    2 Bit        Muxes := 34    
+	   3 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2048.746 ; gain = 702.762 ; free physical = 43455 ; free virtual = 59626
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2048.746 ; gain = 702.762 ; free physical = 43455 ; free virtual = 59626
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2048.746 ; gain = 702.762 ; free physical = 43454 ; free virtual = 59624
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 2051.715 ; gain = 705.730 ; free physical = 43453 ; free virtual = 59623
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 2051.715 ; gain = 705.730 ; free physical = 43453 ; free virtual = 59623
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 2051.715 ; gain = 705.730 ; free physical = 43453 ; free virtual = 59623
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 2051.715 ; gain = 705.730 ; free physical = 43453 ; free virtual = 59623
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 2051.715 ; gain = 705.730 ; free physical = 43453 ; free virtual = 59623
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 2051.715 ; gain = 705.730 ; free physical = 43453 ; free virtual = 59623
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                                                                           | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|my_prj      | grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_18_fu_151/icmp_ln4_79_reg_733_pp0_iter3_reg_reg[0]   | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|my_prj      | grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_17_fu_169/icmp_ln4_93_reg_741_pp0_iter3_reg_reg[0]   | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|my_prj      | grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_7_fu_189/icmp_ln4_31_reg_733_pp0_iter3_reg_reg[0]    | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|my_prj      | grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_6_fu_207/icmp_ln4_45_reg_735_pp0_iter3_reg_reg[0]    | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|my_prj      | grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_5_fu_223/and_ln107_5_reg_785_pp0_iter3_reg_reg[0]    | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|my_prj      | grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_4_fu_243/icmp_ln4_65_reg_733_pp0_iter3_reg_reg[0]    | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|my_prj      | grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_3_fu_261/icmp_ln4_51_reg_749_pp0_iter3_reg_reg[0]    | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|my_prj      | grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_1_fu_295/icmp_ln4_24_reg_713_pp0_iter3_reg_reg[0]    | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|my_prj      | grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_s_fu_315/icmp_ln4_11_reg_622_pp0_iter3_reg_reg[0]    | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|my_prj      | grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_15_fu_351/icmp_ln4_117_reg_749_pp0_iter3_reg_reg[0]  | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|my_prj      | grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_14_fu_373/and_ln105_134_reg_713_pp0_iter3_reg_reg[0] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|my_prj      | grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_14_fu_373/icmp_ln4_129_reg_678_pp0_iter3_reg_reg[0]  | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|my_prj      | grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_13_fu_391/icmp_ln4_143_reg_741_pp0_iter3_reg_reg[0]  | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|my_prj      | grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_12_fu_411/icmp_ln4_156_reg_706_pp0_iter3_reg_reg[0]  | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
++------------+--------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   649|
+|3     |LUT1   |   454|
+|4     |LUT2   |  2872|
+|5     |LUT3   |    83|
+|6     |LUT4   |   107|
+|7     |LUT5   |   208|
+|8     |LUT6   |   126|
+|9     |MUXF7  |     2|
+|10    |SRL16E |    14|
+|11    |FDRE   |  1405|
+|12    |IBUF   |   157|
+|13    |OBUF   |    22|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------------------------------------------------------------+--------------------------------------------------------------------+------+
+|      |Instance                                                                  |Module                                                              |Cells |
++------+--------------------------------------------------------------------------+--------------------------------------------------------------------+------+
+|1     |top                                                                       |                                                                    |  6100|
+|2     |  grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_10_fu_443 |my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_10 |   150|
+|3     |  grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_11_fu_427 |my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_11 |   231|
+|4     |  grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_12_fu_411 |my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_12 |   101|
+|5     |  grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_13_fu_391 |my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_13 |  2223|
+|6     |  grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_14_fu_373 |my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_14 |    87|
+|7     |  grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_15_fu_351 |my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_15 |   870|
+|8     |  grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_16_fu_333 |my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_16 |   145|
+|9     |  grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_17_fu_169 |my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_17 |    98|
+|10    |  grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_18_fu_151 |my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_18 |    98|
+|11    |  grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_1_fu_295  |my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_1  |   102|
+|12    |  grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_2_fu_279  |my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_2  |    76|
+|13    |  grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_3_fu_261  |my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_3  |   181|
+|14    |  grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_4_fu_243  |my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_4  |    95|
+|15    |  grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_5_fu_223  |my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_5  |   400|
+|16    |  grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_6_fu_207  |my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_6  |    90|
+|17    |  grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_7_fu_189  |my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_7  |    92|
+|18    |  grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_8_fu_481  |my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_8  |    73|
+|19    |  grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_9_fu_463  |my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_9  |    67|
+|20    |  grp_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_s_fu_315  |my_prj_decision_function_ap_fixed_18_8_5_3_0_ap_fixed_18_8_5_3_0_s  |    94|
++------+--------------------------------------------------------------------------+--------------------------------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 2051.715 ; gain = 705.730 ; free physical = 43453 ; free virtual = 59623
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 176 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2051.715 ; gain = 705.730 ; free physical = 43453 ; free virtual = 59623
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2051.723 ; gain = 705.730 ; free physical = 43453 ; free virtual = 59623
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2063.621 ; gain = 0.000 ; free physical = 43741 ; free virtual = 59921
+INFO: [Netlist 29-17] Analyzing 651 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2189.398 ; gain = 0.000 ; free physical = 43695 ; free virtual = 59879
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 8b14c6e4
+INFO: [Common 17-83] Releasing license: Synthesis
+137 Infos, 112 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:28 . Memory (MB): peak = 2189.434 ; gain = 849.445 ; free physical = 43695 ; free virtual = 59879
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1812.228; main = 1443.331; forked = 491.572
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3057.566; main = 2189.402; forked = 1008.816
+# report_utilization -file vivado_synth.rpt
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 19 13:39:07 2025...
